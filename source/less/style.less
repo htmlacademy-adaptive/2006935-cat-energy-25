@@ -1,1 +1,69 @@
-// Начните писать стили здесь
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+  min-height: 100%;
+
+  font-family: "Oswald", Arial, sans-serif;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@import "blocks/button.less";
+@import "blocks/main-container.less";
+
+// header
+@import "blocks/header/main-header.less";
+@import "blocks/header/header-logo.less";
+@import "blocks/header/main-nav.less";
+@import "blocks/header//nav-list.less";
+
+
+// index
+@import "blocks/index/main-title.less";
+@import "blocks/index/title-image.less";
+@import "blocks/index/programs.less";
+@import "blocks/index/programs.less";
+@import "blocks/index/program-card.less";
+@import "blocks/index/advantages.less";
+@import "blocks/index/example.less";
+@import "blocks/index/indicators.less";
+@import "blocks/index/indicator.less";
+@import "blocks/index/price-indicator.less";
+@import "blocks/index/change-slider.less";
+@import "blocks/index/toggle-view.less";
+
+// footer
+@import "blocks/footer/main-footer.less";
+@import "blocks/footer/contacts.less";
+@import "blocks/footer/footer-logo.less";
+@import "blocks/footer/social.less";
+@import "blocks/footer/copyright.less";

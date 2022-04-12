@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -18,22 +19,22 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list list">
-        <li class="list__item ">
-          <a href="#">Главная</a>
+      <ul class="main-nav__list nav-list">
+        <li class="nav-list__item ">
+          <a class="nav-list__link" href="#">Главная</a>
         </li>
-        <li class="list__item list__item--current">
-          <a href="catalog.html">Каталог продукции</a>
+        <li class="nav-list__item nav-list__item--current">
+          <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="list__item">
-          <a href="form.html">Подбор программы</a>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="main-container">
-    <h1 class="main-title-catalog main-title-catalog_title">Подбор программы</h1>
+    <h1 class="main-title-catalog">Подбор программы</h1>
 
     <section class="products-main">
       <h2 class="visually-hidden">Основные товары.</h2>
@@ -52,7 +53,7 @@
               <dd class="main-product__definition">700 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item main-product">
           <img class="main-product__image" src="img/catalog/chiken_1000_mobile.png"
@@ -68,7 +69,7 @@
               <dd class="main-product__definition">1000 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item main-product">
           <img class="main-product__image" src="img/catalog/fish_500_mobile.png"
@@ -84,7 +85,7 @@
               <dd class="main-product__definition">700 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item main-product">
           <img class="main-product__image" src="img/catalog/fish_1000_mobile.png"
@@ -100,7 +101,7 @@
               <dd class="main-product__definition">1000 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item main-product">
           <img class="main-product__image" src="img/catalog/buckwheat_500_mobile.png"
@@ -116,7 +117,7 @@
               <dd class="main-product__definition">400 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item main-product">
           <img class="main-product__image" src="img/catalog/buckwheat_1000_mobile.png"
@@ -132,7 +133,7 @@
               <dd class="main-product__definition">700 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item main-product">
           <img class="main-product__image" src="img/catalog/rice_500_mobile.png"
@@ -148,12 +149,12 @@
               <dd class="main-product__definition">400 Р.</dd>
             </dl>
           </div>
-          <button class="main-product__button order-button">Заказать</button>
+          <button class="main-product__button button">Заказать</button>
         </li>
         <li class="products-main__item product-more">
           <p class="product-more__title">Показать еще 100500 товаров</p>
           <p class="product-more__txt">На самом деле вкусов гораздо больше!</p>
-          <button class="product-more__button">Показать все</button>
+          <button class="product-more__button button button--more">Показать все</button>
         </li>
       </ul>
     </section>
@@ -168,7 +169,7 @@
               <dd class="additional-product__definition">200 Р.</dd>
             </dl>
           </div>
-          <button class="additional-product__button order-button">Заказать</button>
+          <button class="additional-product__button button">Заказать</button>
         </li>
         <li class="products-additional__item additional-product">
           <p class="additional-product__title">Питьевая вода</p>
@@ -178,7 +179,7 @@
               <dd class="additional-product__definition">50 Р.</dd>
             </dl>
           </div>
-          <button class="additional-product__button order-button">Заказать</button>
+          <button class="additional-product__button button">Заказать</button>
         </li>
         <li class="products-additional__item additional-product">
           <p class="additional-product__title">Молоко</p>
@@ -188,7 +189,7 @@
               <dd class="additional-product__definition">100 Р.</dd>
             </dl>
           </div>
-          <button class="additional-product__button order-button">Заказать</button>
+          <button class="additional-product__button button">Заказать</button>
         </li>
         <li class="products-additional__item additional-product">
           <p class="additional-product__title">Витамины</p>
@@ -198,7 +199,7 @@
               <dd class="additional-product__definition">300 Р.</dd>
             </dl>
           </div>
-          <button class="additional-product__button order-button">Заказать</button>
+          <button class="additional-product__button button">Заказать</button>
         </li>
       </ul>
     </section>
@@ -208,15 +209,17 @@
     </div>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__contacts contacts">
-      <h3 class="contacts__text">
-        Приглашаем к сотрудничеству дилеров!
-      </h3>
-      <p class="contacts__address">
-        ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург
-      </p>
+    <div class="main-footer__wrapper-contacts">
+      <div class="main-footer__contacts contacts">
+        <h3 class="contacts__text">
+          Приглашаем к сотрудничеству дилеров!
+        </h3>
+        <p class="contacts__address">
+          ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург
+        </p>
+      </div>
     </div>
     <div class="main-footer__map">
       <iframe
@@ -266,10 +269,10 @@
         </li>
       </ul>
     </div>
-    <div class="main-footer__copiright copiright">
-      <a class="copiright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <strong class="copiright__text">HTML Academy</strong>
-        <svg class="copiright__icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
+    <div class="main-footer__copyright copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <strong class="copyright__text">HTML Academy</strong>
+        <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
           fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
