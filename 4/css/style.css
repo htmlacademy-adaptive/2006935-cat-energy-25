@@ -28,7 +28,7 @@
   width: 320px;
   margin: 0 auto;
   min-height: 100%;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 .button {
@@ -37,7 +37,7 @@
   padding: 7px 44px;
   box-sizing: border-box;
   width: 100%;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
@@ -125,7 +125,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 38px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -150,7 +150,7 @@
 .advantages__list {
   padding: 0;
   margin: 0;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -180,7 +180,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -208,7 +208,7 @@
   padding: 0;
   margin: 0;
   width: 77px;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
@@ -268,7 +268,7 @@
 .contacts__address {
   padding: 0;
   margin: 0;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
@@ -303,7 +303,7 @@
 }
 .copyright__text {
   display: block;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -341,7 +341,7 @@
   width: 142px;
   padding: 0;
   margin: 0;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -376,7 +376,7 @@
   padding: 0;
   margin: 0;
   margin-bottom: 21px;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -438,13 +438,13 @@
   padding: 187px 60px 43px 60px;
   margin-bottom: 35px;
   background-color: #68b738;
-  background-image: url(../img/catalog/gift-mobile.jpg);
+  background-image: url("../img/catalog/gift-mobile.jpg");
   background-repeat: no-repeat;
 }
 .gift__text {
   padding: 0;
   margin: 0;
-  font-family: arial;
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -504,11 +504,11 @@
   color: #444444;
   text-transform: uppercase;
 }
-.form-label--checkbox {
+.form-label--radio {
   color: #222222;
 }
 .form-label--checkbox {
-  color: #111111;
+  color: #000000;
 }
 .selection-program {
   margin-bottom: 32px;
@@ -562,12 +562,11 @@
   font-weight: 400;
 }
 .comment__field {
-  padding: 0;
   margin: 0;
   padding: 9px 12px;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -602,7 +601,7 @@
 }
 .form-note {
   display: block;
-  font-family: Arial;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
