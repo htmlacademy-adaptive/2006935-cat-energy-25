@@ -1,42 +1,7 @@
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: medium;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-.page__body {
-  display: flex;
-  flex-direction: column;
-
-  width: 320px;
-  margin: 0 auto;
-  min-height: 100%;
-
-  font-family: "Oswald", Arial, sans-serif;
-  font-weight: 400;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
+// Общие стили
+@import "blocks/fonts.less";
+@import "blocks/visually-hidden.less";
+@import "blocks/page.less";
 @import "blocks/button.less";
 @import "blocks/main-container.less";
 
@@ -76,3 +41,15 @@
 @import "blocks/catalog/products-additional.less";
 @import "blocks/catalog/additional-product.less";
 @import "blocks/catalog/gift.less";
+
+// form
+@import "blocks/form/main-title-form.less";
+@import "blocks/form/first-data.less";
+@import "blocks/form/form-label.less";
+@import "blocks/form/selection-program.less";
+@import "blocks/form/purpose.less";
+@import "blocks/form/owner-data.less";
+@import "blocks/form/comment.less";
+@import "blocks/form/additionally.less";
+@import "blocks/form/form-send-button.less";
+@import "blocks/form/form-note.less";
