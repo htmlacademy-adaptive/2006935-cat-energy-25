@@ -1,24 +1,53 @@
 .main-title {
   position: relative;
+  flex-direction: column;
+  align-items: center;
 
-  padding: 27px 16px 164px;
-  margin-bottom: 135px;
+  padding: 27px 20px 0 20px;
 
   color: #ffffff;
 
   background-image: url("../img/index/index-background-image-mobile.jpg");
   background-repeat: no-repeat;
-  background-color: #68b738;
+  background-color: @green;
+  // background-size: contain;
+  // background-position: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+
+    margin: 0 30px;
+    padding: 0;
+
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 0 0 80px;
+    padding-right: auto;
+    margin: 0 110px;
+    background-color: transparent;
+  }
 }
 
 .main-title__title {
+  width: 450px;
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 87px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .main-title__slogan {
-
   padding: 0;
   margin: 0;
 
@@ -27,9 +56,61 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 450px;
+    margin-bottom: 20px;
+    padding-left: 87px;
+
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+  }
 }
 
 .main-title__image {
-  position: absolute;
-  top: 167px;
+  position: relative;
+  top: 27px;
+  margin-bottom: -142px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    // position: absolute;
+    // top: -50px;
+    // left: 0;
+    display: none;
+  }
+}
+
+.main-title__image-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-title__link {
+  position: relative;
+  top: 178px;
+  margin-bottom: 198px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 240px;
+    left: 88px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 230px;
+  }
 }

@@ -10,4 +10,27 @@
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.page__body::before {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    background-image: url("../img/index/index-background-image-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: @green;
+  }
 }

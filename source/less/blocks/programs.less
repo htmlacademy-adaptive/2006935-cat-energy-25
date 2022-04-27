@@ -1,13 +1,15 @@
 .programs {
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+  }
 }
 
-.programs__link {
+.programs__card {
   margin-bottom: 20px;
-
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
 }
