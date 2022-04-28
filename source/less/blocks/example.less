@@ -1,5 +1,7 @@
 .example {
+  position: relative;
   padding: 25px 20px 40px 20px;
+
   background-color: @gray;
 
   @media (min-width: @tablet-width) {
@@ -8,8 +10,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px 65px 110px;
-    background: linear-gradient(to bottom, #ffffff 139px, @gray 0px);
+    padding: 43px 110px 75px 110px;
+    background: linear-gradient(to bottom, #ffffff 179px, @gray 0px);
   }
 }
 
@@ -23,7 +25,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 43px;
     margin-bottom: 146px;
   }
 }
@@ -48,13 +49,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
+  margin-bottom: 40px;
+
   @media (min-width: @tablet-width) {
     justify-content: flex-start;
+
+    margin-bottom: 80px;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
+    margin-bottom: 0;
   }
 }
 
-// .example__slider {}
+.example__slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 50%
+  }
+
+}

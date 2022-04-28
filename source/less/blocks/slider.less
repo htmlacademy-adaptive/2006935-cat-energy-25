@@ -1,19 +1,113 @@
 // .slider {}
 
-// .slider__before {}
+.slider__image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 
-// .slider__before-image {}
-
-// .slider__after {}
-
-// .slider__after-image {}
-
-.slider__toggle {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
-// .slider__toggle-before {}
+.slider__before-image {
+  display: block;
 
-// .slider__toggle-after {}
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.slider__after-image {
+  display: none;
+}
+
+.slider__image-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.slider__scale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 210px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 592px;
+
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.slider__scale-text {
+  min-width: 50px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 4px 9px 5px 9px;
+
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.slider__bar {
+  position: relative;
+  display: block;
+
+  width: 86px;
+  height: 14px;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+  }
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  width: 35px;
+  height: 6px;
+
+  background-color: @green;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    left: 50%;
+
+    width: 34px;
+    height: 34px;
+
+    background-color: @green;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #cdcdcd, 0 1px 3px 0 rgba(0, 0, 0, 0.16), inset 0 0 0 13px #ffffff;
+
+    transform: translate(-50%, -50%)
+  }
+}
+
+// .slider__scale-before {}
+
+// .slider__scale-after {}
