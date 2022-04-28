@@ -11,12 +11,27 @@
 
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    padding: 15px 0;
+    margin-right: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .indicator__number {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .indicator__description {
@@ -25,7 +40,8 @@
 
   padding: 0;
   margin: 0;
-  width: 77px;
+  width: min-content;
+  padding: 0 12px;
 
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -34,5 +50,21 @@
   text-align: center;
   text-transform: lowercase;
 
-  background-color: #eaeaea;
+  background-color: @gray;
+
+  @media (min-width: @tablet-width) {
+    bottom: -6px;
+
+    width: max-content;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: #ffffff;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    background-color: @gray;
+  }
 }
