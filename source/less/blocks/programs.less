@@ -1,49 +1,31 @@
 .programs {
+  display: flex;
+  flex-direction: column;
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+    margin: 0 110px;
+    margin-bottom: 71px;
+  }
 }
 
-.programs__link {
+.programs__card {
   margin-bottom: 20px;
+  box-sizing: border-box;
 
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
 }
-
-.programs-card {
-  margin-bottom: 20px;
-  padding: 30px 20px 18px 20px;
-  background-color: #f2f2f2;
-}
-
-.programs-card__title {
-  margin: 0;
-  padding: 0;
-  padding-left: 71px;
-  margin-bottom: 29px;
-
-  font-size: 24px;
-  line-height: 37px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.programs-card__description {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 38px;
-}
-
-.programs-card__link {
-  padding-right: 49px;
-
-  color: #000000;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-// .programs-card--slim {}
-
-// .programs-card--pro {}

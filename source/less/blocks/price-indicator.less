@@ -2,10 +2,40 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 
-  margin-bottom: 40px;
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    text-align: left;
+    margin-left: 0;
+    width: 436px;
+  }
 }
 
-// .price-indicator__text {}
+.price-indicator__text {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-right: 63px;
+  }
+}
 
 // .price-indicator__cost {}

@@ -10,9 +10,36 @@
   color: #ffffff;
   text-transform: uppercase;
 
-  background-color: #68b738;
+  background-color: @green;
   border: none;
 }
+
+.button--index {
+  width: 280px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    padding: 14px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    // top: 455px;
+    // left: 190px;
+  }
+}
+
+// .button--catalog {}
+
+// .button-form {}
 
 .button--more {
   color: #444444;
