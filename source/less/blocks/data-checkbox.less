@@ -8,6 +8,10 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 54px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 // .data-checkbox__legend {}
@@ -21,12 +25,15 @@
 }
 
 .data-checkbox__list {
-  display: grid;
-
   @media (min-width: @tablet-width) {
+    display: grid;
     grid-template-columns: 344px 1fr;
     row-gap: 32px;
     width: max-content;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
   }
 }
 
@@ -39,6 +46,14 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 221px;
+
+    &:not(:last-child) {
+      margin-right: 104px;
+    }
   }
 }
 

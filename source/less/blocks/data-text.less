@@ -7,11 +7,22 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+    margin-right: 80px;
+  }
 }
 
 .data-text--owner {
   @media (min-width: @tablet-width) {
+
     margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-bottom: 69px;
   }
 }
 
@@ -20,6 +31,13 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+  }
+}
+
+.data-text__list--owner {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 100%;
   }
 }
 
@@ -32,6 +50,16 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.data-text__item--owner {
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
+
+    flex-grow: 1;
   }
 }
 

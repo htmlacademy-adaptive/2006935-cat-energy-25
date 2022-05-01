@@ -42,78 +42,78 @@
 
 
     <form class="form-program-select" action="https://echo.htmlacademy.ru/" method="get">
+      <div class="form-program-select__top-wrapper">
+        <fieldset class="data-text">
+          <legend class="visually-hidden">
+            <h2>Основные данные.</h2>
+          </legend>
+          <ul class="data-text__list list-null">
+            <li class="data-text__item">
+              <label class="data-text__label form-program-select__text">Имя:*
+                <input class="data-text__field form-program-select__text" type="text" name="cat-name" required
+                  placeholder="Барсик">
+              </label>
+            </li>
+            <li class="data-text__item">
+              <label class="data-text__label form-program-select__text">Вес (кг):*
+                <input class="data-text__field form-program-select__text" type="number" name="cat-weight" required
+                  placeholder="7">
+              </label>
+            </li>
+            <li class="data-text__item">
+              <label class="data-text__label form-program-select__text">Возраст (лет):
+                <input class="data-text__field form-program-select__text" type="number" name="cat-age" placeholder="7">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset class="data-text">
-        <legend class="visually-hidden">
-          <h2>Основные данные.</h2>
-        </legend>
-        <ul class="data-text__list list-null">
-          <li class="data-text__item">
-            <label class="data-text__label form-program-select__text">Имя:*
-              <input class="data-text__field form-program-select__text" type="text" name="cat-name" required
-                placeholder="Барсик">
-            </label>
-          </li>
-          <li class="data-text__item">
-            <label class="data-text__label form-program-select__text">Вес (кг):*
-              <input class="data-text__field form-program-select__text" type="number" name="cat-weight" required
-                placeholder="7">
-            </label>
-          </li>
-          <li class="data-text__item">
-            <label class="data-text__label form-program-select__text">Возраст (лет):
-              <input class="data-text__field form-program-select__text" type="number" name="cat-age" placeholder="7">
-            </label>
-          </li>
-        </ul>
-      </fieldset>
 
+        <fieldset class="data-radiobutton">
+          <legend class="visually-hidden">
+            <h2>Цель выбора программы.</h2>
+          </legend>
+          <ul class="data-radiobutton__list list-null">
+            <li class="data-radiobutton__item">
+              <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
+                <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
+                  value="weight-loss" checked>
+                <span class="data-radiobutton__mark"></span>
+                <span>Похудение</span>
+              </label>
+            </li>
+            <li class="data-radiobutton__item">
+              <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
+                <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
+                  value="weight-gain">
+                <span class="data-radiobutton__mark"></span>
+                <span>Набор массы</span>
+              </label>
+            </li>
+            <li class="data-radiobutton__item">
 
-      <fieldset class="data-radiobutton">
-        <legend class="visually-hidden">
-          <h2>Цель выбора программы.</h2>
-        </legend>
-        <ul class="data-radiobutton__list list-null">
-          <li class="data-radiobutton__item">
-            <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
-              <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
-                value="weight-loss" checked>
-              <span class="data-radiobutton__mark"></span>
-              <span>Похудение</span>
-            </label>
-          </li>
-          <li class="data-radiobutton__item">
-            <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
-              <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
-                value="weight-gain">
-              <span class="data-radiobutton__mark"></span>
-              <span>Набор массы</span>
-            </label>
-          </li>
-          <li class="data-radiobutton__item">
-
-            <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
-              <input class="data-radiobutton__radiobutton  visually-hidden" type="radio" name="purpose-program"
-                value="dont-know">
-              <span class="data-radiobutton__mark"></span>
-              <span>Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-
+              <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
+                <input class="data-radiobutton__radiobutton  visually-hidden" type="radio" name="purpose-program"
+                  value="dont-know">
+                <span class="data-radiobutton__mark"></span>
+                <span>Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
       <fieldset class="data-text data-text--owner">
         <legend class="data-text__legend">
           <h2 class="data-text__title base-title base-title--inner">Контактные данные (владельца кота)</h2>
         </legend>
-        <ul class="data-text__list list-null">
-          <li class="data-text__item">
+        <ul class="data-text__list--owner list-null">
+          <li class="data-text__item data-text__item--owner">
             <label class="data-text__label form-program-select__text">E-mail:*
               <input class="data-text__field form-program-select__text" type="email" name="owner-email" required
                 placeholder="kuklachev@gmail.com">
             </label>
           </li>
-          <li class="data-text__item">
+          <li class="data-text__item data-text__item--owner">
             <label class="data-text__label form-program-select__text">Телефон:*
               <input class="data-text__field form-program-select__text" type="tel" name="owner-tel" required
                 placeholder="8 (960) 900-60-90" pattern="8[0-9]{10}">
