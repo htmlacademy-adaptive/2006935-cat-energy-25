@@ -70,23 +70,20 @@
   }
 }
 
-.data-checkbox__checkbox:checked {
+.data-checkbox__checkbox:checked+.data-checkbox__mark::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-  &+.data-checkbox__mark::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  width: 26px;
+  height: 26px;
 
-    width: 26px;
-    height: 26px;
+  background-image: url("../../img/icons/tick.svg");
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 
-    background-image: url("../../img/icons/tick.svg");
-    background-size: 26px 26px;
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-
-    content: "";
-  }
+  content: "";
 }
 
 .data-checkbox__mark {
