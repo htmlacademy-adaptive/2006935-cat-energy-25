@@ -45,6 +45,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 10px 0;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -55,6 +59,13 @@
 // .main-nav__item---current {}
 
 .main-nav__link {
+  display: block;
   color: #000000;
   text-decoration: none;
+}
+
+.main-nav__link--index {
+  @media(min-width: @desktop-width) {
+    color: #ffffff;
+  }
 }

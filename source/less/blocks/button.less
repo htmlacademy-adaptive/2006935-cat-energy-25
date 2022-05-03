@@ -30,12 +30,17 @@
     font-size: 20px;
     line-height: 20px;
   }
-
-  // @media (min-width: @desktop-width) {
-  // }
 }
 
-// .button--catalog {}
+.button--catalog {
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}
 
 .button--form {
   @media (min-width: @tablet-width) {
@@ -54,4 +59,12 @@
   color: #444444;
 
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
