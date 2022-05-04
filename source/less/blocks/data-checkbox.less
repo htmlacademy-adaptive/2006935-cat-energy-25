@@ -1,101 +1,101 @@
 .data-checkbox {
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	margin-bottom: 34px;
-	border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 34px;
+  border: none;
 
-	@media (min-width: @tablet-width) {
-		margin-bottom: 54px;
-	}
+  @media (min-width: @tablet-width) {
+    margin-bottom: 54px;
+  }
 
-	@media (min-width: @desktop-width) {
-		margin-bottom: 61px;
-	}
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .data-checkbox__legend {
-	margin-bottom: 34px;
+  margin-bottom: 34px;
 
-	@media (min-width: @tablet-width) {
-		margin-bottom: 57px;
-	}
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .data-checkbox__list {
-	@media (min-width: @tablet-width) {
-		display: grid;
-		grid-template-columns: 344px 1fr;
-		row-gap: 32px;
-		width: max-content;
-	}
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 344px 1fr;
+    row-gap: 32px;
+    width: max-content;
+  }
 
-	@media (min-width: @desktop-width) {
-		display: flex;
-	}
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .data-checkbox__item {
-	margin-bottom: 13px;
+  margin-bottom: 13px;
 
-	&:last-child {
-		margin-bottom: 0;
-	}
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-	@media (min-width: @tablet-width) {
-		margin-bottom: 0;
-	}
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 
-	@media (min-width: @desktop-width) {
-		width: 221px;
+  @media (min-width: @desktop-width) {
+    width: 221px;
 
-		&:not(:last-child) {
-			margin-right: 104px;
-		}
-	}
+    &:not(:last-child) {
+      margin-right: 104px;
+    }
+  }
 }
 
 .data-checkbox__label {
-	position: relative;
+  position: relative;
 
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	padding: 5px 0 7px 46px;
+  padding: 5px 0 7px 46px;
 
-	@media (min-width: @tablet-width) {
-		padding: 5px 0 5px 60px;
-	}
+  @media (min-width: @tablet-width) {
+    padding: 5px 0 5px 60px;
+  }
 }
 
 .data-checkbox__checkbox:checked + .data-checkbox__mark::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-	width: 26px;
-	height: 26px;
+  width: 26px;
+  height: 26px;
 
-	background-image: url("../img/icons/tick.svg");
-	background-size: 26px 26px;
-	background-repeat: no-repeat;
-	transform: translate(-50%, -50%);
+  background-image: url("../img/icons/tick.svg");
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
 
-	content: "";
+  content: "";
 }
 
 .data-checkbox__mark {
-	position: absolute;
-	left: 0;
-	display: block;
+  position: absolute;
+  left: 0;
+  display: block;
 
-	width: 30px;
-	height: 30px;
+  width: 30px;
+  height: 30px;
 
-	box-shadow: 0 0 0 1px #cdcdcd;
+  box-shadow: 0 0 0 1px #cdcdcd;
 
-	@media (min-width: @tablet-width) {
-		width: 40px;
-		height: 40px;
-	}
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
