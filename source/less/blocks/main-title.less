@@ -2,20 +2,15 @@
   flex-direction: column;
   align-items: center;
 
-  // padding: 27px 20px 0 20px;
-
   color: #ffffff;
 
   background-image: url("../img/index/index-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-color: @green;
-  // background-size: contain;
-  // background-position: center;
 
   @media (min-width: @tablet-width) {
     display: block;
 
-    // margin: 0 30px;
     padding: 62px 0 0 0;
 
     background-image: none;
@@ -96,9 +91,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    // position: absolute;
-    // top: -50px;
-    // left: 0;
     display: none;
   }
 }
@@ -111,11 +103,11 @@
   }
 
   @media (min-width: @desktop-width) {
-
     position: absolute;
     z-index: 3;
     top: -81px;
     left: 368px;
+
     width: 552px;
     height: 499px;
   }
@@ -124,17 +116,20 @@
 .main-title__link {
   position: relative;
   top: 178px;
+
   margin-bottom: 198px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 240px;
     left: 87px;
+
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: static;
+
     margin-bottom: 265px;
   }
 }

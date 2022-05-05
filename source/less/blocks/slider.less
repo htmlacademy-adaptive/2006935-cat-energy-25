@@ -3,6 +3,7 @@
 .slider__image-container {
   display: flex;
   justify-content: center;
+
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
@@ -106,6 +107,10 @@
 
     transform: translate(-50%, -50%);
   }
+}
+
+.slider__scale-switcher:checked + .slider__bar > .slider__toggle {
+  left: 43px;
 }
 
 // .slider__scale-before {}

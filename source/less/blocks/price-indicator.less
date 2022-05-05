@@ -1,18 +1,18 @@
 .price-indicator {
+  width: 100%;
+
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 
-  width: 100%;
-
   @media (min-width: @tablet-width) {
-    width: 174px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
 
+    width: 174px;
     margin-left: auto;
 
     font-size: 20px;
@@ -21,9 +21,11 @@
 
   @media (min-width: @desktop-width) {
     display: block;
-    text-align: left;
+
     margin-left: 0;
     width: 436px;
+
+    text-align: left;
   }
 }
 

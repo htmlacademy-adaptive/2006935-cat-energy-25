@@ -22,16 +22,19 @@
 
 .page__body--index::before {
   @media (min-width: @desktop-width) {
-    content: "";
     position: absolute;
     z-index: 1;
     top: 0;
     left: 50%;
+
     width: 720px;
     height: 694px;
+
     background-image: url("../img/index/index-background-image-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: @green;
+
+    content: "";
   }
 }

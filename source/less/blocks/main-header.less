@@ -19,11 +19,38 @@
   }
 }
 
-
 .main-header__logo {
   text-decoration: none;
 }
 
-// .main-header__logo-image {}
+.main-header__logo-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
 
-// .main-header__logo-text {}
+.main-header__logo-text {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}

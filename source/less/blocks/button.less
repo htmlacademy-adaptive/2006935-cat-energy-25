@@ -30,19 +30,41 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.button--catalog {
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
 
   @media (min-width: @desktop-width) {
-    // top: 455px;
-    // left: 190px;
+    width: 168px;
   }
 }
 
-// .button--catalog {}
+.button--form {
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    padding: 13px 45px;
 
-// .button-form {}
+    font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
+}
 
 .button--more {
   color: #444444;
 
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
 }
