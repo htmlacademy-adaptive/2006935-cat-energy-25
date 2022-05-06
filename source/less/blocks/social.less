@@ -21,8 +21,15 @@
   fill: #666666;
 }
 
-// .social__link--vkontakte {}
+.social__icon--vkontakte,
+.social__icon--youtube,
+.social__icon--telegram {
+  &:hover {
+    fill: @green;
+  }
 
-// .social__link--youtube {}
-
-// .social__link--telegram {}
+  &:active {
+    fill: @green;
+    opacity: 30%;
+  }
+}

@@ -36,12 +36,31 @@
 }
 
 .programs-card__description {
+  position: relative;
+
   padding: 0;
   margin: 0;
   margin-bottom: 38px;
 
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+
+    width: 240px;
+    height: 1px;
+
+    background-color: #d9d9d9;
+
+    content: "";
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 48px;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -50,18 +69,78 @@
 }
 
 .programs-card__link {
-  padding-right: 49px;
+  position: relative;
 
+  display: block;
+
+  width: 132px;
+  padding-right: 32px;
+  box-sizing: border-box;
+
+  font-size: 16px;
+  line-height: 16px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
 
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/index/arrow.svg");
+    transform: translate(0, -50%);
+  }
+
   @media (min-width: @tablet-width) {
+    width: 165px;
+    padding-right: 32px;
+
     font-size: 20px;
     line-height: 29px;
   }
+
+  &:hover::after {
+    background-image: url("../img/index/arrow-long.svg");
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
-// .programs-card--slim {}
+.programs-card--slim {
+  background-image: url("../img/index/programs-slim.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  background-position: 22px 22px;
 
-// .programs-card--pro {}
+  @media (min-width: @tablet-width) {
+    background-size: 200px 211px;
+    background-position: 446px 81px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+  }
+}
+
+.programs-card--pro {
+  background-image: url("../img/index/programs-pro.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+  background-position: 13px 24px;
+
+  @media (min-width: @tablet-width) {
+    background-size: 268px 200px;
+    background-position: 412px 91px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+  }
+}
