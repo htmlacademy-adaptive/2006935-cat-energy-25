@@ -36,10 +36,29 @@
 }
 
 .base-title--catalog {
+  position: relative;
   margin-bottom: 41px;
+
+  &:after {
+    position: absolute;
+    bottom: -41px;
+    left: -20px;
+    right: 0;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: #ebebeb;
+
+    content: "";
+  }
 
   @media (min-width: @tablet-width) {
     margin-bottom: 82px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
