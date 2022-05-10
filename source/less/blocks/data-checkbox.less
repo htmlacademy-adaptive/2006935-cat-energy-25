@@ -33,7 +33,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    &:before {
+    &::before {
       position: absolute;
       top: 60%;
       left: -71px;
@@ -118,7 +118,7 @@
 
   padding: 5px 0 7px 46px;
 
-  &:hover>.data-checkbox__mark {
+  &:hover > .data-checkbox__mark {
     box-shadow: 0 0 0 1px #bababa;
   }
 
@@ -160,7 +160,6 @@
 }
 
 .data-checkbox__checkbox:disabled {
-
   & ~ .data-checkbox__mark,
   &.data-checkbox__mark-text {
     opacity: 30%;

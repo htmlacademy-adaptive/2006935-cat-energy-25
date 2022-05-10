@@ -33,7 +33,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    &:before {
+    &::before {
       position: absolute;
       top: 60%;
       left: -71px;
@@ -139,11 +139,11 @@
   &:focus {
     border-color: #444444;
 
-    & + .data-text__icon-email{
+    & + .data-text__icon-email {
       stroke: @green;
     }
 
-    & + .data-text__icon-phone{
+    & + .data-text__icon-phone {
       fill: @green;
     }
   }
@@ -151,11 +151,11 @@
   // &--error {
   //   border-color: #ff8282;
 
-  //   & + .data-text__icon-email{
+  //   & + .data-text__icon-email {
   //     stroke: #ff8282;
   //   }
 
-  //   & + .data-text__icon-phone{
+  //   & + .data-text__icon-phone {
   //     fill: #ff8282;
   //   }
   // }
@@ -171,6 +171,7 @@
   right: 15px;
 
   stroke: #000000;
+
   @media (min-width: @tablet-width) {
     right: 19px;
   }
