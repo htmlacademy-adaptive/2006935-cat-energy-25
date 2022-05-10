@@ -138,10 +138,26 @@
 
   &:focus {
     border-color: #444444;
+
+    & + .data-text__icon-email{
+      stroke: @green;
+    }
+
+    & + .data-text__icon-phone{
+      fill: @green;
+    }
   }
 
   // &--error {
   //   border-color: #ff8282;
+
+  //   & + .data-text__icon-email{
+  //     stroke: #ff8282;
+  //   }
+
+  //   & + .data-text__icon-phone{
+  //     fill: #ff8282;
+  //   }
   // }
 
   @media (min-width: @tablet-width) {
@@ -154,7 +170,7 @@
   position: absolute;
   right: 15px;
 
-  // fill: @green;
+  stroke: #000000;
   @media (min-width: @tablet-width) {
     right: 19px;
   }
@@ -162,9 +178,10 @@
 
 .data-text__icon-phone {
   position: absolute;
-  right: 13px;
 
-  // fill: @green;
+  right: 13px;
+  fill: #000000;
+
   @media (min-width: @tablet-width) {
     right: 17px;
   }
