@@ -7,6 +7,11 @@
   background-color: @green;
   background-image: url("../img/catalog/gift-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/gift-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -14,6 +19,10 @@
     padding: 71px 124px 69px 422px;
 
     background-image: url("../img/catalog/gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/gift-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -25,6 +34,10 @@
 
     background-image: url("../img/catalog/gift-mobile.jpg");
     background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/gift-mobile@2x.jpg");
+    }
   }
 }
 

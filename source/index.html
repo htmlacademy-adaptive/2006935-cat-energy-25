@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -45,10 +49,11 @@
         <p class="main-title__slogan">Занялся собой? Займись котом!</p>
         <picture>
           <source media="(min-width: 1440px)"
-            srcset="img/index/title-image-desktop.png, img/index/title-image-desktop@2x.png 2x" width="552"
+            srcset="img/index/title-image-desktop.png 1x, img/index/title-image-desktop@2x.png 2x" width="552"
             height="499">
           <source media="(min-width: 768px)"
-            srcset="img/index/title-image-tablet.png, img/index/title-image-tablet@2x.png 2x" width="709" height="609">
+            srcset="img/index/title-image-tablet.png 1x, img/index/title-image-tablet@2x.png 2x" width="709"
+            height="609">
           <img class="main-title__image" src="img/index/title-image-mobile.png"
             srcset="img/index/title-image-mobile@2x.png 2x" alt="Изображение баночки Cat energy." width="280"
             height="270">
@@ -130,12 +135,30 @@
 
       <div class="example__slider slider">
         <div class="slider__image-container slider__image-container--before slider__image-container--nojs">
-          <img class="slider__before-image" src="img/index/fat-cat-mobile.png" width="280" height="232"
-            alt="Толстый кот!">
-          <img class="slider__after-image" src="img/index/skinny-cat-mobile.png" width="280" height="232"
-            alt="Худой кот!">
-          <img class="slider__nojs-image" src="img/index/twins-cat-nojs-mobile.png" width="280" height="232"
-            alt="Сравнение котов до и после!">
+
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/index/fat-cat-tablet.png 1x, img/index/fat-cat-tablet@2x.png 2x" width="592" height="511">
+            <img class="slider__before-image" src="img/index/fat-cat-mobile.png"
+              srcset="img/index/fat-cat-mobile@2x.png 2x" width="280" height="232" alt="Толстый кот!">
+          </picture>
+
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/index/skinny-cat-tablet.png 1x, img/index/skinny-cat-tablet@2x.png 2x" width="592"
+              height="511">
+            <img class="slider__after-image" src="img/index/skinny-cat-mobile.png"
+              srcset="img/index/skinny-cat-mobile@2x.png 2x" width="280" height="232" alt="Худой кот!">
+          </picture>
+
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/index/twins-cat-nojs-tablet.png 1x, img/index/twins-cat-nojs-tablet@2x.png 2x" width="592"
+              height="511">
+            <img class="slider__nojs-image" src="img/index/twins-cat-nojs-mobile.png"
+              srcset="img/index/twins-cat-nojs-tablet.png 2x" width="280" height="232"
+              alt="Сравнение котов до и после!">
+          </picture>
         </div>
         <div class="slider__scale">
           <label class="slider__label">
@@ -162,7 +185,6 @@
 
       </p>
     </div>
-
     <iframe class="main-footer__map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1649158760785!5m2!1sru!2sru"
       style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
