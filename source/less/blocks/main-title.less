@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   background-color: @green;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/index-background-image-mobile@2x.jpg");
+    background-size: 320px 302px;
+  }
+
   @media (min-width: @tablet-width) {
     display: block;
 
@@ -87,19 +92,8 @@
   margin-bottom: -142px;
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.main-title__image-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
+    top: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
