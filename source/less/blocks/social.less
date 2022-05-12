@@ -1,4 +1,40 @@
-// .social {}
+.social {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 20;
+    right: 20;
+
+    width: 280px;
+    height: 1px;
+
+    background-color: #d9d9d9;
+
+    content: "";
+  }
+
+  &::before {
+    top: -20px;
+  }
+
+  &::after {
+    bottom: 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
 
 .social__list {
   display: flex;

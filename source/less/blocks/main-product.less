@@ -1,4 +1,20 @@
 .main-product {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: -20px;
+    right: 0;
+    bottom: -25px;
+
+    width: 320px;
+    height: 1px;
+
+    background-color: #ebebeb;
+
+    content: "";
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -9,6 +25,10 @@
     background-color: @gray;
 
     box-shadow: inset 0 81px 0 0 #ffffff;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -175,7 +195,29 @@
 }
 
 .main-product__term {
+  position: relative;
   float: left;
+
+  @media (min-width: @tablet-width) {
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -9px;
+
+      width: 250px;
+      height: 1px;
+
+      background-color: #cdcdcd;
+
+      content: "";
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::after {
+      width: 169px;
+    }
+  }
 }
 
 .main-product__button {

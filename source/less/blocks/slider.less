@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
 
+  width: 280px;
+  height: 260px;
   margin-bottom: 15px;
 
   @media (min-width: @tablet-width) {
@@ -11,30 +13,37 @@
   }
 }
 
-.slider__before-image {
-  display: block;
+.slider__image-container--before > .slider__after-image {
+  display: none;
+}
 
-  @media (min-width: @tablet-width) {
+.slider__image-container--after > .slider__before-image {
+  display: none;
+}
+
+.slider__nojs-image {
+  display: none;
+}
+
+.slider__image-container--nojs {
+  & > .slider__nojs-image {
+    display: block;
+  }
+
+  & > .slider__after-image {
+    display: none;
+  }
+
+  & > .slider__before-image {
     display: none;
   }
 }
 
-.slider__after-image {
-  display: none;
-}
-
-.slider__image-tablet {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: block;
-  }
-}
-
 .slider__scale {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   width: 210px;
   box-sizing: border-box;
@@ -48,6 +57,7 @@
 }
 
 .slider__scale-text {
+  position: absolute;
   min-width: 50px;
 
   font-size: 16px;
@@ -57,10 +67,20 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    padding: 4px 9px 5px 9px;
+    margin: 0 9px;
 
     font-size: 20px;
     line-height: 29px;
+
+    border-bottom: 1px dashed #cdcdcd;
+  }
+
+  &--before {
+    left: 0;
+  }
+
+  &--after {
+    right: 0;
   }
 }
 
@@ -106,13 +126,28 @@
     box-shadow: 0 0 0 1px #cdcdcd, 0 1px 3px 0 rgba(0, 0, 0, 0.16), inset 0 0 0 13px #ffffff;
 
     transform: translate(-50%, -50%);
+
+    &:hover {
+      box-shadow: 0 0 0 1px #cdcdcd, 0 2px 4px 0 rgba(0, 0, 0, 0.19), inset 0 0 0 13px #ffffff;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px @green, 0 3px 5px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 13px #ffffff;
+    }
   }
 }
 
-.slider__scale-switcher:checked + .slider__bar > .slider__toggle {
-  left: 43px;
+.slider__scale-text--before,
+.slider__scale-text--after {
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    &:hover {
+      border-bottom: 1px solid #cdcdcd;
+    }
+
+    &:active {
+      border-bottom: 1px solid #eaeaea;
+    }
+  }
 }
-
-// .slider__scale-before {}
-
-// .slider__scale-after {}
