@@ -53,7 +53,7 @@
   position: relative;
   width: 100%;
 
-  &:after {
+  &::after {
     position: absolute;
     top: 16px;
     left: 0;
@@ -90,7 +90,6 @@
 }
 
 .data-text__list--owner {
-
   @media (min-width: @tablet-width) {
     margin: 0 66px 0 68px;
   }
@@ -146,11 +145,11 @@
   &:focus {
     border-color: #444444;
 
-    &+.data-text__icon-email {
+    & + .data-text__icon-email {
       stroke: @green;
     }
 
-    &+.data-text__icon-phone {
+    & + .data-text__icon-phone {
       fill: @green;
     }
   }
