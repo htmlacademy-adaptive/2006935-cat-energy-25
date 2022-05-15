@@ -33,14 +33,28 @@
     display: grid;
     grid-template-columns: 50% 50%;
 
-    &:last-child::after {
-      bottom: -27px;
+    border: 1px solid #ebebeb;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+
+    &::before,
+    &::after {
+      display: none;
     }
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+
+    border: none;
+
+    &::before,
+    &::after {
+      display: block;
+    }
 
     &:last-child::after {
       bottom: 0;

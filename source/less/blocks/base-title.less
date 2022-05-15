@@ -36,29 +36,17 @@
 }
 
 .base-title--catalog {
-  position: relative;
+  padding-left: 20px;
   margin-bottom: 41px;
 
-  &::after {
-    position: absolute;
-    bottom: -41px;
-    left: -20px;
-    right: 0;
-
-    width: 320px;
-    height: 1px;
-
-    background-color: #ebebeb;
-
-    content: "";
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    margin-bottom: 82px;
   }
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 82px;
-
-    &::after {
-      display: none;
-    }
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    margin-bottom: 84px;
   }
 }
 

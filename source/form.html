@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a href="index.html" class="main-header__logo">
-      <img class="main-header__logo-mobile" src="img/logo/logo-mobile.svg" width="33" height="37"
-        alt="Логотип Cat energy.">
+    <a href="#" class="main-header__logo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
+        <img class="main-header__logo-mobile" src="img/logo/logo-mobile.svg" width="33" height="37"
+          alt="Логотип Cat energy.">
+      </picture>
       <img class="main-header__logo-text" src="img/logo/logo-text.svg" width="101" height="18"
         alt="Текст логотипа Cat energy.">
-      <img class="main-header__logo-tablet" src="img/logo/logo-tablet.svg" width="174" height="52"
-        alt="Логотип Cat energy.">
-      <img class="main-header__logo-desktop" src="img/logo/logo-desktop.svg" width="202" height="59"
-        alt="Логотип Cat energy.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -63,7 +67,7 @@
               </label>
             </li>
             <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">Возраст (лет):
+              <label class="data-text__label form-program-select__text">Возраст&nbsp;(лет):
                 <input class="data-text__field form-program-select__text data-text__field--error" type="number"
                   name="cat-age" placeholder="7">
               </label>
@@ -103,9 +107,11 @@
         </fieldset>
       </div>
       <fieldset class="data-text data-text--owner">
-        <legend class="data-text__legend">
-          <h2 class="data-text__title base-title base-title--inner">Контактные данные (владельца кота)</h2>
-        </legend>
+        <div class="data-text__title-container">
+          <legend class="data-text__legend">
+            <h2 class="data-text__title base-title base-title--inner">Контактные данные (владельца кота)</h2>
+          </legend>
+        </div>
         <ul class="data-text__list data-text__list--owner list-null">
           <li class="data-text__item data-text__item--owner">
             <label class="data-text__label form-program-select__text">E-mail:*
@@ -146,16 +152,20 @@
         </ul>
       </fieldset>
       <fieldset class="form-program-select__comment">
-        <legend class="form-program-select__comment-legend">
-          <h2 class="form-program-select__title base-title base-title--inner">Комментарий</h2>
-        </legend>
+        <div class="form-program-select__title-container">
+          <legend class="form-program-select__comment-legend">
+            <h2 class="form-program-select__title base-title base-title--inner">Комментарий</h2>
+          </legend>
+        </div>
         <textarea class="form-program-select__comment-field form-program-select__text" name="comment-field" cols="30"
           rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="data-checkbox">
-        <legend class="data-checkbox__legend">
-          <h2 class="data-checkbox__title base-title base-title--inner">Дополнительно</h2>
-        </legend>
+        <div class="data-checkbox__title-container">
+          <legend class="data-checkbox__legend">
+            <h2 class="data-checkbox__title base-title base-title--inner">Дополнительно</h2>
+          </legend>
+        </div>
         <ul class="data-checkbox__list list-null">
           <li class="data-checkbox__item">
             <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">

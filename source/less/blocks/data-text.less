@@ -5,6 +5,7 @@
   border: none;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-bottom: 70px;
   }
 
@@ -17,55 +18,23 @@
 .data-text__title {
   position: relative;
 
-  max-width: 520px;
+  display: inline-block;
 
-  &::after {
-    position: absolute;
-    top: 15px;
-    right: -24px;
+  padding-right: 22px;
+  padding-left: 20px;
+  width: 187px;
 
-    width: 99px;
-    height: 2px;
-
-    background-color: @green;
-
-    content: "";
-  }
+  background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      top: 60%;
-      left: -71px;
-
-      width: 30px;
-      height: 2px;
-
-      background-color: @green;
-
-      content: "";
-    }
-
-    &::after {
-      top: 60%;
-      right: -183px;
-
-      width: 145px;
-    }
+    width: 515px;
+    padding: 0 42px 0 39px;
+    margin-left: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    &::before {
-      left: -112px;
-
-      width: 70px;
-    }
-
-    &::after {
-      right: -814px;
-
-      width: 778px;
-    }
+    padding: 0 40px;
+    margin-left: 70px;
   }
 }
 
@@ -80,7 +49,31 @@
   }
 }
 
+.data-text__title-container {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: @green;
+
+    content: "";
+
+    @media (min-width: @tablet-width) {
+      top: 50%;
+    }
+  }
+}
+
 .data-text__legend {
+  padding: 0;
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
@@ -88,10 +81,22 @@
   }
 }
 
+.data-text__list {
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
 .data-text__list--owner {
+  @media (min-width: @tablet-width) {
+    margin: 0 66px 0 68px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 100%;
+    margin: 0 110px;
   }
 }
 
@@ -108,11 +113,12 @@
 }
 
 .data-text__item--owner {
+  flex-grow: 1;
+
   @media (min-width: @desktop-width) {
     &:not(:last-child) {
       margin-right: 80px;
     }
-    flex-grow: 1;
   }
 }
 
@@ -126,7 +132,7 @@
   flex-grow: 1;
   padding: 13px 40px 14px 16px;
   margin-left: 13px;
-  box-sizing: border-box;
+  width: 50%;
 
   border: 1px solid #e7e7e7;
 
