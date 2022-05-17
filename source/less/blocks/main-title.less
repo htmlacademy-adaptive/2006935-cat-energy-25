@@ -7,17 +7,16 @@
   background-image: url("../img/index/index-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-color: @green;
-  background-size: cover;
+  background-size: 320px 302px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/index-background-image-mobile@2x.jpg");
-    // background-size: 320px 302px;
   }
 
   @media (min-width: @tablet-width) {
     display: block;
 
-    padding: 62px 0 0 0;
+    padding: 59px 0 0 0;
 
     background-image: none;
     background-color: #ffffff;
@@ -75,7 +74,7 @@
   @media (min-width: @tablet-width) {
     width: 450px;
     margin-bottom: 20px;
-    padding-left: 87px;
+    padding-left: 89px;
 
     font-size: 20px;
     line-height: 20px;
@@ -91,13 +90,14 @@
 
 .main-title__image {
   position: relative;
-  top: 27px;
+  top: 29px;
   margin: 0 auto;
-  margin-bottom: -142px;
+  margin-bottom: -151px;
 
   @media (min-width: @tablet-width) {
     top: 0;
-    margin-bottom: 0;
+    left: -1px;
+    margin-bottom: -5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -115,13 +115,12 @@
   position: relative;
   top: 178px;
 
-  // width: 100%;
   margin-bottom: 198px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 240px;
-    left: 87px;
+    top: 230px;
+    left: 90px;
 
     margin-bottom: 0;
   }

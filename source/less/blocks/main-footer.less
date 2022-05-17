@@ -19,7 +19,7 @@
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     width: 100%;
-    padding: 70px 56px;
+    padding: 60px 70px;
     box-sizing: border-box;
   }
 
@@ -76,6 +76,7 @@
     justify-content: space-between;
 
     width: 160px;
+    margin-top: -3px;
 
     font-size: 16px;
     line-height: 20px;
@@ -142,8 +143,17 @@
 
 .main-footer__logo-text {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+  }
 }
 
-// .main-footer__social {}
+.main-footer__social {
+  @media (min-width: @tablet-width) {
+    margin-top: -2px;
+    margin-left: 24px;
+  }
+}
 
 // .main-footer__copiright {}
