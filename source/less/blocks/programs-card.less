@@ -8,7 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 59px 52px;
   }
 }
 
@@ -69,7 +69,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 }
 
@@ -91,7 +91,6 @@
   &::after {
     position: absolute;
     top: 45%;
-    right: 2px;
     content: "";
     width: 32px;
     height: 10px;
@@ -148,6 +147,18 @@
       height: 106px;
     }
   }
+
+  &>.programs-card__link:after {
+    right: -1px;
+
+    @media (min-width: @tablet-width) {
+      right: 0px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: -3px;
+    }
+  }
 }
 
 .programs-card--pro {
@@ -174,11 +185,23 @@
     }
 
     @media (min-width: @desktop-width) {
-      top: 47px;
+      top: 46px;
       left: 33px;
 
       width: 134px;
       height: 100px;
+    }
+  }
+
+  &>.programs-card__link:after {
+    right: 1px;
+
+    @media (min-width: @tablet-width) {
+      right: 4px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 3px;
     }
   }
 }
