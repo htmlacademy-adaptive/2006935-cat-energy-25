@@ -6,7 +6,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,7 +28,7 @@
 
   @media (min-width: @tablet-width) {
     width: 515px;
-    padding: 0 42px 0 39px;
+    padding: 0 39px 0 39px;
     margin-left: 30px;
   }
 
@@ -67,7 +67,7 @@
     content: "";
 
     @media (min-width: @tablet-width) {
-      top: 50%;
+      top: 22px;
     }
   }
 }
@@ -77,7 +77,7 @@
   margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 73px;
   }
 }
 
@@ -122,6 +122,8 @@
 }
 
 .data-text__label {
+  position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -140,6 +142,24 @@
 
   &--phone {
     margin-right: 9px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: -2px;
+    margin-right: 18px;
+
+    &--name {
+      margin-right: 15px;
+    }
+
+    &--email {
+      margin-right: 19px;
+      margin-left: 3px;
+    }
+
+    &--phone {
+      margin-right: 16px;
+    }
   }
 }
 
@@ -196,25 +216,29 @@
 
   @media (min-width: @tablet-width) {
     padding: 10px 40px 10px 19px;
-    margin-left: 14px;
+
+    &--email {
+      padding-left: 20px;
+    }
   }
 }
 
 .data-text__icon-email {
   position: absolute;
-  right: 36px;
+  right: 16px;
 
   stroke: #000000;
 
   @media (min-width: @tablet-width) {
-    right: 19px;
+    top: 18px;
+    right: 18px;
   }
 }
 
 .data-text__icon-phone {
   position: absolute;
 
-  right: 33px;
+  right: 13px;
   fill: #000000;
 
   @media (min-width: @tablet-width) {
