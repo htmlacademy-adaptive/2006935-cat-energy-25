@@ -1,7 +1,7 @@
 .data-text {
   padding: 0;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   border: none;
 
   @media (min-width: @tablet-width) {
@@ -20,7 +20,7 @@
 
   display: inline-block;
 
-  padding-right: 22px;
+  padding-right: 14px;
   padding-left: 20px;
   width: 187px;
 
@@ -74,7 +74,7 @@
 
 .data-text__legend {
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
@@ -101,7 +101,7 @@
 }
 
 .data-text__item {
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
@@ -113,7 +113,6 @@
 }
 
 .data-text__item--owner {
-  flex-grow: 1;
 
   @media (min-width: @desktop-width) {
     &:not(:last-child) {
@@ -123,20 +122,49 @@
 }
 
 .data-text__label {
-  position: relative;
   display: flex;
   align-items: center;
 }
 
+.data-text__field-label {
+  margin-top: -1px;
+  margin-right: 16px;
+
+  &--name {
+    margin-right: 13px;
+  }
+
+  &--email {
+    margin-right: 11px;
+  }
+
+  &--phone {
+    margin-right: 9px;
+  }
+}
+
 .data-text__field {
   flex-grow: 1;
-  padding: 13px 40px 14px 16px;
-  margin-left: 13px;
-  width: 50%;
+
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  box-sizing: border-box;
 
   border: 1px solid #e7e7e7;
 
   outline: none;
+
+  &--email {
+    width: 219px;
+    padding-right: 40px;
+  }
+
+  &--phone {
+    width: 204px;
+    padding-right: 40px;
+  }
 
   &:hover {
     border-color: #cdcdcd;
@@ -145,11 +173,11 @@
   &:focus {
     border-color: #444444;
 
-    & + .data-text__icon-email {
+    &+.data-text__icon-email {
       stroke: @green;
     }
 
-    & + .data-text__icon-phone {
+    &+.data-text__icon-phone {
       fill: @green;
     }
   }
@@ -174,7 +202,7 @@
 
 .data-text__icon-email {
   position: absolute;
-  right: 15px;
+  right: 36px;
 
   stroke: #000000;
 
@@ -186,7 +214,7 @@
 .data-text__icon-phone {
   position: absolute;
 
-  right: 13px;
+  right: 33px;
   fill: #000000;
 
   @media (min-width: @tablet-width) {

@@ -55,19 +55,22 @@
           </legend>
           <ul class="data-text__list list-null">
             <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">Имя:*
+              <label class="data-text__label form-program-select__text">
+                <span class="data-text__field-label data-text__field-label--name">Имя:*</span>
                 <input class="data-text__field form-program-select__text data-text__field--error" type="text"
                   name="cat-name" required placeholder="Барсик">
               </label>
             </li>
             <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">Вес (кг):*
+              <label class="data-text__label form-program-select__text">
+                <span class="data-text__field-label">Вес (кг):*</span>
                 <input class="data-text__field form-program-select__text data-text__field--error" type="number"
                   name="cat-weight" required placeholder="7">
               </label>
             </li>
             <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">Возраст&nbsp;(лет):
+              <label class="data-text__label form-program-select__text">
+                <span class="data-text__field-label">Возраст&nbsp;(лет):</span>
                 <input class="data-text__field form-program-select__text data-text__field--error" type="number"
                   name="cat-age" placeholder="7">
               </label>
@@ -114,9 +117,10 @@
         </div>
         <ul class="data-text__list data-text__list--owner list-null">
           <li class="data-text__item data-text__item--owner">
-            <label class="data-text__label form-program-select__text">E-mail:*
-              <input class="data-text__field form-program-select__text data-text__field--error" type="email"
-                name="owner-email" required placeholder="kuklachev@gmail.com">
+            <label class="data-text__label form-program-select__text">
+              <span class="data-text__field-label data-text__field-label--email">E-mail:*</span>
+              <input class="data-text__field data-text__field--email form-program-select__text data-text__field--error"
+                type="email" name="owner-email" required placeholder="kuklachev@gmail.com">
               <svg class="data-text__icon-email" aria-hidden="true" focusable="false" width="18" height="13"
                 fill="#ffffff">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
@@ -124,9 +128,10 @@
             </label>
           </li>
           <li class="data-text__item data-text__item--owner">
-            <label class="data-text__label form-program-select__text">Телефон:*
-              <input class="data-text__field form-program-select__text data-text__field--error" type="tel"
-                name="owner-tel" required placeholder="8 (960) 900-60-90" pattern="8[0-9]{10}">
+            <label class="data-text__label form-program-select__text">
+              <span class="data-text__field-label data-text__field-label--phone">Телефон:*</span>
+              <input class="data-text__field data-text__field--phone form-program-select__text data-text__field--error"
+                type="tel" name="owner-tel" required placeholder="8 (960) 900-60-90" pattern="8[0-9]{10}">
               <svg class="data-text__icon-phone" aria-hidden="true" focusable="false" width="20" height="20"
                 fill="none">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -190,7 +195,7 @@
   <footer class="main-footer">
     <div class="main-footer__contacts main-footer__contacts--inner">
       <p class="main-footer__contacts-text">
-        Приглашаем к сотрудничеству дилеров!
+        Приглашаем <br> к сотрудничеству дилеров!
       </p>
       <p class="main-footer__contacts-address">
         <span class="main-footer__contacts-address-street">ул. Большая Конюшенная, д. 19/8</span>
