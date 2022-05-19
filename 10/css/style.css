@@ -194,6 +194,9 @@
 }
 .additional-product {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .additional-product::before {
   position: absolute;
@@ -244,6 +247,7 @@
   }
 }
 .additional-product__title {
+  align-self: flex-start;
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -263,7 +267,9 @@
 }
 @media (min-width: 1440px) {
   .additional-product__title {
+    align-self: center;
     margin-bottom: 0;
+    padding-left: 1px;
   }
 }
 .additional-product__description {
@@ -383,15 +389,16 @@
 @media (min-width: 768px) {
   .advantages__list {
     grid-template-columns: 250px 250px;
-    justify-content: start;
     column-gap: 134px;
     row-gap: 33px;
+    transform: translate(-37px, 0);
   }
 }
 @media (min-width: 1440px) {
   .advantages__list {
     grid-template-columns: 250px 250px 250px 250px;
     column-gap: 75px;
+    transform: translate(0, 0);
   }
 }
 .advantages__item {
@@ -427,6 +434,11 @@
     top: 40px;
     width: 80px;
     height: 80px;
+  }
+}
+@media (min-width: 1440px) {
+  .advantages__item::before {
+    padding-left: 2px;
   }
 }
 .advantages__item-number {
@@ -481,6 +493,7 @@
 }
 @media (min-width: 768px) {
   .copyright__link {
+    justify-content: space-between;
     width: 163px;
   }
 }
@@ -501,6 +514,7 @@
 @media (min-width: 768px) {
   .copyright__text {
     margin-top: -2px;
+    margin-right: 0;
     margin-left: -1px;
   }
 }
@@ -636,7 +650,8 @@
 }
 .data-text__label {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 .data-text__field-label {
@@ -661,10 +676,12 @@
     margin-right: 15px;
   }
   .data-text__field-label--email {
+    width: auto;
     margin-right: 19px;
     margin-left: 3px;
   }
   .data-text__field-label--phone {
+    width: auto;
     margin-right: 16px;
   }
 }
@@ -682,7 +699,6 @@
   }
 }
 .data-text__field {
-  flex-grow: 1;
   padding: 0;
   padding-top: 12px;
   padding-bottom: 13px;
@@ -692,11 +708,9 @@
   outline: none;
 }
 .data-text__field--email {
-  width: 219px;
   padding-right: 40px;
 }
 .data-text__field--phone {
-  width: 204px;
   padding-right: 40px;
 }
 .data-text__field:hover {
@@ -1050,6 +1064,20 @@
     margin-bottom: 146px;
   }
 }
+@media (min-width: 768px) {
+  .example__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+}
+@media (min-width: 1440px) {
+  .example__container {
+    position: relative;
+    max-width: 1500px;
+  }
+}
 .example__text {
   margin: 0;
   padding: 0;
@@ -1070,14 +1098,17 @@
   }
 }
 .example__indicators {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
   .example__indicators {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    column-gap: 0;
     margin-bottom: 80px;
   }
 }
@@ -1095,8 +1126,8 @@
 @media (min-width: 1440px) {
   .example__slider {
     position: absolute;
-    top: -5px;
-    left: 738px;
+    top: -254px;
+    right: -2px;
   }
 }
 .form-program-select {
@@ -1392,7 +1423,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 124px;
+  min-width: 124px;
   padding-top: 14px;
   padding-bottom: 17px;
   margin-bottom: 33px;
@@ -1477,7 +1508,7 @@
 }
 @media (min-width: 1440px) {
   .main-container--inner {
-    padding-top: 70px;
+    padding-top: 71px;
   }
 }
 .main-container__additional-gift-wrapper {
@@ -1690,17 +1721,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 22px 30px 0 30px;
+    margin: 23px 30px 0 30px;
   }
 }
 @media (min-width: 1440px) {
   .main-header {
     margin: 0 110px;
     margin-top: 52px;
-    margin-bottom: 0;
   }
   .main-header--index {
-    margin-top: 46px;
+    margin-bottom: 106px;
   }
 }
 .main-header__logo {
@@ -1718,7 +1748,7 @@
 @media (min-width: 768px) {
   .main-header__logo {
     margin: 0;
-    margin-top: 2px;
+    margin-top: 1px;
   }
 }
 .main-header__logo-text {
@@ -1732,6 +1762,7 @@
 }
 .main-nav {
   position: relative;
+  z-index: 2;
 }
 .main-nav__toggle {
   position: absolute;
@@ -1813,7 +1844,7 @@
 @media (min-width: 1440px) {
   .main-nav__list {
     width: 478px;
-    margin-top: -2px;
+    margin-top: -4px;
     font-size: 20px;
     line-height: 29px;
     color: #ffffff;
@@ -1948,7 +1979,7 @@
 @media (min-width: 1440px) {
   .main-product {
     padding-bottom: 40px;
-    padding-left: 6px;
+    padding-left: 5px;
     box-shadow: inset 0 88px 0 0 #ffffff;
   }
 }
@@ -1962,7 +1993,7 @@
 }
 .main-product__wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 8px;
 }
 @media (min-width: 768px) {
@@ -2207,7 +2238,8 @@
   background-image: url("../img/index/index-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-color: #68b738;
-  background-size: 320px 302px;
+  background-size: cover;
+  background-position: 50%;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-title {
@@ -2224,7 +2256,27 @@
 }
 @media (min-width: 1440px) {
   .main-title {
-    padding: 106px 0 0 80px;
+    width: 100%;
+    padding: 0;
+  }
+  .main-title::before {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 694px;
+    background-image: url("../img/index/index-background-image-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #68b738;
+    content: "";
+  }
+}
+@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
+  .main-title::before {
+    background-image: url("../img/index/index-background-image-desktop@2x.jpg");
+    background-size: cover;
   }
 }
 .main-title__wrapper {
@@ -2241,6 +2293,8 @@
   .main-title__wrapper {
     padding: 0;
     margin: 0 110px;
+    margin-bottom: 267px;
+    padding-left: 80px;
   }
 }
 .main-title__title {
@@ -2259,7 +2313,7 @@
 }
 @media (min-width: 1440px) {
   .main-title__title {
-    padding-left: 1px;
+    padding-left: 0;
     margin-bottom: 40px;
   }
 }
@@ -2285,20 +2339,22 @@
 }
 @media (min-width: 1440px) {
   .main-title__slogan {
-    padding-left: 1px;
+    padding-left: 0;
     margin-bottom: 52px;
   }
 }
 .main-title__image {
   position: relative;
   top: 29px;
+  left: 50%;
+  padding: 0;
   margin: 0 auto;
   margin-bottom: -151px;
+  transform: translate(-50%, 0);
 }
 @media (min-width: 768px) {
   .main-title__image {
     top: 0;
-    left: -1px;
     margin-bottom: -5px;
   }
 }
@@ -2307,7 +2363,7 @@
     position: absolute;
     z-index: 3;
     top: -82px;
-    left: 369px;
+    left: 724px;
     width: 552px;
     height: 499px;
   }
@@ -2328,8 +2384,6 @@
 @media (min-width: 1440px) {
   .main-title__link {
     position: static;
-    margin-bottom: 272px;
-    margin-left: 1px;
   }
 }
 .page__body {
@@ -2351,27 +2405,8 @@
     min-width: 1440px;
   }
 }
-@media (min-width: 1440px) {
-  .page__body--index::before {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    width: 720px;
-    height: 694px;
-    background-image: url("../img/index/index-background-image-desktop.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #68b738;
-    content: "";
-  }
-}
-@media (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1440px) and (min-resolution: 2dppx) {
-  .page__body--index::before {
-    background-image: url("../img/index/index-background-image-desktop@2x.jpg");
-    background-size: cover;
-  }
-}
 .price-indicator {
+  grid-column: 1 / -1;
   width: 100%;
   font-size: 14px;
   line-height: 20px;
@@ -2576,9 +2611,11 @@
   }
 }
 .programs__card {
-  margin: 0 auto;
+  display: flex;
+  width: 100%;
   margin-bottom: 20px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .programs__card {
@@ -2592,8 +2629,8 @@
 }
 .programs-card {
   position: relative;
+  margin: 0 auto;
   padding: 30px 20px 22px 20px;
-  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .programs-card {
