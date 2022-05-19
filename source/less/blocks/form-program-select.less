@@ -18,7 +18,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
 
     margin: 0 110px;
   }
@@ -80,7 +82,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 40px;
+    padding: 0 42px 0 40px;
 
     margin-left: 70px;
   }
@@ -187,6 +189,7 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 81px;
+    margin-left: 1px;
   }
 }
 
@@ -202,5 +205,9 @@
     margin-top: -4px;
 
     font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
   }
 }
