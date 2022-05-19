@@ -120,8 +120,6 @@
 
   display: flex;
   align-items: center;
-
-  @media (min-width: @desktop-width) {}
 }
 
 .data-text__field-label {
@@ -203,11 +201,11 @@
   &:focus {
     border-color: #444444;
 
-    &+.data-text__icon-email {
+    & + .data-text__icon-email {
       stroke: @green;
     }
 
-    &+.data-text__icon-phone {
+    & + .data-text__icon-phone {
       fill: @green;
     }
   }

@@ -41,7 +41,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -90,7 +89,6 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    display: block;
     position: static;
     display: flex;
     justify-content: space-between;
@@ -157,7 +155,7 @@
 
     // для pixel perfect
     &:first-child {
-      margin-top: 0px;
+      margin-top: 0;
     }
 
     &:nth-child(2) {
@@ -180,12 +178,10 @@
 
     &:last-child {
       margin-top: -1px;
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
-
-
 
 .main-nav__item--current {
   @media (min-width: @tablet-width) {
