@@ -7,7 +7,9 @@
   background-image: url("../img/index/index-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-color: @green;
-  background-size: 320px 302px;
+  // background-size: 320px 302px;
+  background-size: cover;
+  background-position: 50%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/index-background-image-mobile@2x.jpg");
@@ -23,7 +25,29 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 106px 0 0 80px;
+    width: 100%;
+    padding: 0;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 0;
+
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/index/index-background-image-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: @green;
+
+      content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/index-background-image-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -39,6 +63,8 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     margin: 0 110px;
+    margin-bottom: 267px;
+    padding-left: 80px;
   }
 }
 
@@ -56,7 +82,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 1px;
+    padding-left: 0;
     margin-bottom: 40px;
   }
 }
@@ -83,7 +109,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 1px;
+    padding-left: 0;
     margin-bottom: 52px;
   }
 }
@@ -91,12 +117,17 @@
 .main-title__image {
   position: relative;
   top: 29px;
+  left: 50%;
+
+  margin: 0;
+  padding: 0;
   margin: 0 auto;
   margin-bottom: -151px;
 
+  transform: translate(-50%, 0);
+
   @media (min-width: @tablet-width) {
     top: 0;
-    left: -1px;
     margin-bottom: -5px;
   }
 
@@ -104,7 +135,7 @@
     position: absolute;
     z-index: 3;
     top: -82px;
-    left: 369px;
+    left: 724px;
 
     width: 552px;
     height: 499px;
@@ -127,8 +158,5 @@
 
   @media (min-width: @desktop-width) {
     position: static;
-
-    margin-bottom: 272px;
-    margin-left: 1px;
   }
 }

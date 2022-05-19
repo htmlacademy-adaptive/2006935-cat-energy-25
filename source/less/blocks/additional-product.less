@@ -1,5 +1,8 @@
 .additional-product {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &::before {
     position: absolute;
@@ -63,6 +66,8 @@
 }
 
 .additional-product__title {
+  align-self: flex-start;
+
   padding: 0;
   margin: 0;
   margin-bottom: 10px;
@@ -82,7 +87,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    align-self: center;
+
     margin-bottom: 0;
+    padding-left: 1px;
   }
 }
 

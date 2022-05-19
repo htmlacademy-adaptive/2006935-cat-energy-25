@@ -27,14 +27,17 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 250px 250px;
-    justify-content: start;
     column-gap: 134px;
     row-gap: 33px;
+
+    transform: translate(-37px, 0);
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 250px 250px 250px 250px;
     column-gap: 75px;
+
+    transform: translate(0, 0);
   }
 }
 
@@ -81,6 +84,12 @@
       height: 80px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      padding-left: 2px;
+    }
+  }
 }
 
 .advantages__item-number {
@@ -105,7 +114,7 @@
     background-image: url("../img/index/advantages-meal.svg");
   }
 
-  & > .advantages__item-number {
+  &>.advantages__item-number {
     left: 119px;
   }
 }
