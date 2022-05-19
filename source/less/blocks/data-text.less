@@ -118,7 +118,8 @@
 .data-text__label {
   position: relative;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
 }
 
@@ -147,11 +148,13 @@
     }
 
     &--email {
+      width: auto;
       margin-right: 19px;
       margin-left: 3px;
     }
 
     &--phone {
+      width: auto;
       margin-right: 16px;
     }
   }
@@ -172,8 +175,6 @@
 }
 
 .data-text__field {
-  flex-grow: 1;
-
   padding: 0;
   padding-top: 12px;
   padding-bottom: 13px;
@@ -185,12 +186,10 @@
   outline: none;
 
   &--email {
-    width: 219px;
     padding-right: 40px;
   }
 
   &--phone {
-    width: 204px;
     padding-right: 40px;
   }
 
