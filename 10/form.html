@@ -123,7 +123,7 @@
               <input class="data-text__field data-text__field--email form-program-select__text data-text__field--error"
                 type="email" name="owner-email" required placeholder="kuklachev@gmail.com">
               <svg class="data-text__icon-email" aria-hidden="true" focusable="false" width="18" height="13"
-                fill="#ffffff">
+                fill="#ffffff" stroke="none">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
             </label>
@@ -156,40 +156,42 @@
             <h2 class="data-checkbox__title base-title base-title--inner">Дополнительно</h2>
           </legend>
         </div>
-        <ul class="data-checkbox__list list-null">
-          <li class="data-checkbox__item">
-            <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
-              <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="sweetener" checked>
-              <span class="data-checkbox__mark"></span>
-              <span class="data-checkbox__mark-text">Сахарозаменитель</span>
-            </label>
-          </li>
-          <li class="data-checkbox__item">
-            <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
-              <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="water">
-              <span class="data-checkbox__mark"></span>
-              <span class="data-checkbox__mark-text">Питьевая вода</span>
-            </label>
-          </li>
-          <li class="data-checkbox__item">
-            <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
-              <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="milk">
-              <span class="data-checkbox__mark"></span>
-              <span class="data-checkbox__mark-text">Молоко</span>
-            </label>
-          </li>
-          <li class="data-checkbox__item">
-            <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
-              <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="vitamins">
-              <span class="data-checkbox__mark"></span>
-              <span class="data-checkbox__mark-text">Витамины</span>
-            </label>
-          </li>
-        </ul>
+        <div class="data-checkbox__wrapper">
+          <ul class="data-checkbox__list list-null">
+            <li class="data-checkbox__item">
+              <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
+                <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="sweetener" checked>
+                <span class="data-checkbox__mark"></span>
+                <span class="data-checkbox__mark-text">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="data-checkbox__item">
+              <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
+                <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="water">
+                <span class="data-checkbox__mark"></span>
+                <span class="data-checkbox__mark-text">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="data-checkbox__item">
+              <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
+                <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="milk">
+                <span class="data-checkbox__mark"></span>
+                <span class="data-checkbox__mark-text">Молоко</span>
+              </label>
+            </li>
+            <li class="data-checkbox__item">
+              <label class="data-checkbox__label form-program-select__text form-program-select__text--checkbox">
+                <input class="data-checkbox__checkbox visually-hidden" type="checkbox" name="vitamins">
+                <span class="data-checkbox__mark"></span>
+                <span class="data-checkbox__mark-text">Витамины</span>
+              </label>
+            </li>
+          </ul>
+          <div class="form-program-select__bottom-wrapper">
+            <button class="button form-program-select__button button--form" type="submit">Отправить заявку</button>
+            <span class="form-program-select__note">* — Обязательные поля</span>
+          </div>
       </fieldset>
-      <div class="form-program-select__bottom-wrapper">
-        <button class="button form-program-select__button button--form" type="submit">Отправить заявку</button>
-        <span class="form-program-select__note">* — Обязательные поля</span>
       </div>
     </form>
   </main>
