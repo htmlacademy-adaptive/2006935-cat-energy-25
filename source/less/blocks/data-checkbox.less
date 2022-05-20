@@ -70,22 +70,39 @@
   }
 }
 
+.data-checkbox__wrapper {
+  position: relative;
+  left: 50%;
+
+  width: 280px;
+
+  transform: translate(-50%, 0);
+
+  @media (min-width: @tablet-width){
+    width: 708px;
+    margin: 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+  width: 1220px;
+  margin: 0 ;
+  }
+}
+
 .data-checkbox__list {
-  margin: 0 20px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 344px 1fr;
     row-gap: 32px;
 
-    width: max-content;
-    margin-left: 70px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-
-    margin-left: 110px;
+    margin-bottom: 61px;
   }
 }
 
