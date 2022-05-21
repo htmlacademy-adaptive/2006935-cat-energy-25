@@ -7,21 +7,11 @@
   background-image: url("../img/index/index-background-image-mobile.jpg");
   background-repeat: no-repeat;
   background-color: @green;
-  // background-size: 320px 302px;
   background-size: cover;
   background-position: 50%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/index-background-image-mobile@2x.jpg");
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
-
-    padding: 59px 0 0 0;
-
-    background-image: none;
-    background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,6 +30,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-color: @green;
+      background-position: center;
 
       content: "";
 
@@ -62,8 +53,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin: 0 110px;
-    margin-bottom: 267px;
+    margin: 0 111px;
+    margin-bottom: 273px;
     padding-left: 80px;
   }
 }

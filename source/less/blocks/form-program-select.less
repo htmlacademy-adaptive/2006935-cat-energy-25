@@ -1,14 +1,7 @@
 .form-program-select {
-  margin-bottom: 32px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 72px;
-  }
-
   @media (min-width: @desktop-width) {
     width: 100%;
     margin: 0;
-    margin-bottom: 82px;
   }
 }
 
@@ -28,7 +21,7 @@
 }
 
 .form-program-select__bottom-wrapper {
-    @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -41,7 +34,7 @@
   }
 }
 
-.form-program-select__title-container {
+.form-program-select__container {
   position: relative;
 
   width: 100%;
@@ -99,14 +92,14 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-.form-program-select__text--radiobutton {
-  color: #222222;
-}
+  &--radiobutton {
+    color: #222222;
+  }
 
-.form-program-select__text--checkbox {
-  color: #000000;
+  &--checkbox {
+    color: #000000;
+  }
 }
 
 .form-program-select__comment {

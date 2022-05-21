@@ -36,15 +36,21 @@
 }
 
 .base-title--catalog {
+  display: flex;
+
+  max-width: 550px;
+  margin: 0 auto;
   padding-left: 20px;
   margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
+    max-width: 900px;
     padding-left: 30px;
     margin-bottom: 82px;
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 1500px;
     padding-left: 110px;
     margin-bottom: 77px;
   }

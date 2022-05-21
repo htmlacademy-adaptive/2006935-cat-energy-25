@@ -51,10 +51,6 @@
   padding-left: 80px;
   overflow: hidden;
 
-  & br {
-    display: none;
-  }
-
   &::before {
     position: absolute;
     top: 0;
@@ -73,10 +69,6 @@
   @media (min-width: @tablet-width) {
     padding: 152px 0 60px 0;
 
-    & br {
-      display: inline;
-    }
-
     &::before {
       top: 40px;
 
@@ -89,6 +81,14 @@
     &::before {
       padding-left: 2px;
     }
+  }
+}
+
+.advantages__item br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }
 
