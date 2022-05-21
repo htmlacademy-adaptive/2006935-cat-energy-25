@@ -45,7 +45,6 @@
 
   <main class="main-container main-container--inner">
     <h1 class="base-title base-title--catalog">Каталог продукции</h1>
-
     <section class="products-main">
       <h2 class="visually-hidden">Основные товары.</h2>
       <ul class="products-main__list list-null">
@@ -258,69 +257,69 @@
         </li>
 
         <li class="products-main__item products-main__item--more main-product ">
-          <div class="main-product__container">
-            <div class="main-product--more">
-              <button class="main-product__download-more"></button>
-              <p class="main-product__title main-product__title--more">Показать еще 100500 товаров</p>
-              <p class="main-product__text main-product__text--more">На самом деле вкусов гораздо больше!</p>
-              <button class="main-product__button button button--more">Показать все</button>
-            </div>
+          <div class="main-product__container main-product__container--more">
+            <button class="main-product__download-more"></button>
+            <p class="main-product__title main-product__title--more">Показать еще 100500 товаров</p>
+            <p class="main-product__text main-product__text--more">На самом деле вкусов гораздо больше!</p>
+            <button class="main-product__button button button--more">Показать все</button>
           </div>
         </li>
       </ul>
     </section>
     <div class="main-container__additional-gift-wrapper">
-      <section class="products-additional">
-        <div class="products-additional__title-container">
-          <h2 class="products-additional__title base-title base-title--inner base-title--inner-catalog">Дополнительные
-            товары</h2>
+      <div class="main-container__additional-gift-container">
+        <section class="products-additional">
+          <div class="products-additional__title-container">
+            <h2 class="products-additional__title base-title base-title--inner base-title--inner-catalog">Дополнительные
+              товары</h2>
+          </div>
+          <ul class="products-additional__list list-null">
+            <li class="products-additional__item additional-product">
+              <p class="additional-product__title">Сахарозаменитель</p>
+              <div class="additional-product__description">
+                <dl class="additional-product__list list-null">
+                  <dt class="additional-product__term">1 упаковка (100 г)</dt>
+                  <dd class="additional-product__definition">200 Р.</dd>
+                </dl>
+              </div>
+              <button class="additional-product__button button button--catalog">Заказать</button>
+            </li>
+            <li class="products-additional__item additional-product">
+              <p class="additional-product__title">Питьевая вода</p>
+              <div class="additional-product__description">
+                <dl class="additional-product__list list-null">
+                  <dt class="additional-product__term">5 литров</dt>
+                  <dd class="additional-product__definition">50 Р.</dd>
+                </dl>
+              </div>
+              <button class="additional-product__button button button--catalog">Заказать</button>
+            </li>
+            <li class="products-additional__item additional-product">
+              <p class="additional-product__title">Молоко</p>
+              <div class="additional-product__description">
+                <dl class="additional-product__list list-null">
+                  <dt class="additional-product__term">1 литр</dt>
+                  <dd class="additional-product__definition">100 Р.</dd>
+                </dl>
+              </div>
+              <button class="additional-product__button button button--catalog">Заказать</button>
+            </li>
+            <li class="products-additional__item additional-product">
+              <p class="additional-product__title">Витамины</p>
+              <div class="additional-product__description">
+                <dl class="additional-product__list list-null">
+                  <dt class="additional-product__term">1 упаковка (30 г)</dt>
+                  <dd class="additional-product__definition">300 Р.</dd>
+                </dl>
+              </div>
+              <button class="additional-product__button button button--catalog">Заказать</button>
+            </li>
+          </ul>
+        </section>
+        <div class="gift">
+          <h2 class="visually-hidden">Подарок!</h2>
+          <p class="gift__text">Закажите все <br> и получите чехол для кота в подарок!</p>
         </div>
-        <ul class="products-additional__list list-null">
-          <li class="products-additional__item additional-product">
-            <p class="additional-product__title">Сахарозаменитель</p>
-            <div class="additional-product__description">
-              <dl class="additional-product__list list-null">
-                <dt class="additional-product__term">1 упаковка (100 г)</dt>
-                <dd class="additional-product__definition">200 Р.</dd>
-              </dl>
-            </div>
-            <button class="additional-product__button button button--catalog">Заказать</button>
-          </li>
-          <li class="products-additional__item additional-product">
-            <p class="additional-product__title">Питьевая вода</p>
-            <div class="additional-product__description">
-              <dl class="additional-product__list list-null">
-                <dt class="additional-product__term">5 литров</dt>
-                <dd class="additional-product__definition">50 Р.</dd>
-              </dl>
-            </div>
-            <button class="additional-product__button button button--catalog">Заказать</button>
-          </li>
-          <li class="products-additional__item additional-product">
-            <p class="additional-product__title">Молоко</p>
-            <div class="additional-product__description">
-              <dl class="additional-product__list list-null">
-                <dt class="additional-product__term">1 литр</dt>
-                <dd class="additional-product__definition">100 Р.</dd>
-              </dl>
-            </div>
-            <button class="additional-product__button button button--catalog">Заказать</button>
-          </li>
-          <li class="products-additional__item additional-product">
-            <p class="additional-product__title">Витамины</p>
-            <div class="additional-product__description">
-              <dl class="additional-product__list list-null">
-                <dt class="additional-product__term">1 упаковка (30 г)</dt>
-                <dd class="additional-product__definition">300 Р.</dd>
-              </dl>
-            </div>
-            <button class="additional-product__button button button--catalog">Заказать</button>
-          </li>
-        </ul>
-      </section>
-      <div class="gift">
-        <h2 class="visually-hidden">Подарок!</h2>
-        <p class="gift__text">Закажите все <br> и получите чехол для кота в подарок!</p>
       </div>
     </div>
   </main>
