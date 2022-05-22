@@ -14,6 +14,11 @@
     background-image: url("../img/index/index-background-image-mobile@2x.jpg");
   }
 
+  @media (min-width: @tablet-width) {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
   @media (min-width: @desktop-width) {
     width: 100%;
     padding: 0;
@@ -54,8 +59,10 @@
   @media (min-width: @desktop-width) {
     padding: 0;
     margin: 0 111px;
-    margin-bottom: 273px;
+    margin-bottom: 267px;
     padding-left: 80px;
+
+    background-image: none;
   }
 }
 

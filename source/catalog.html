@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
@@ -257,7 +257,9 @@
 
         <li class="products-main__item products-main__item--more main-product ">
           <div class="main-product__container main-product__container--more">
-            <button class="main-product__download-more"></button>
+            <button class="main-product__download-more">
+              <span class="visually-hidden">Показать больше товаров</span>
+            </button>
             <p class="main-product__title main-product__title--more">Показать еще 100500 товаров</p>
             <p class="main-product__text main-product__text--more">На самом деле вкусов гораздо больше!</p>
             <button class="main-product__button button button--more">Показать все</button>
@@ -382,13 +384,13 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <strong class="copyright__text">HTML Academy</strong>
           <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" fill="none">
-            <use xlink:href="img/sprite.svg#icon-copiright"></use>
+            <use xlink:href="img/sprite.svg#icon-copyright"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
