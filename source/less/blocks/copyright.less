@@ -20,6 +20,7 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
+    justify-content: space-between;
     width: 163px;
   }
 
@@ -37,14 +38,37 @@
 .copyright__text {
   display: block;
 
+  margin-top: -2px;
+  margin-left: -1px;
+
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -2px;
+    margin-right: 0;
+    margin-left: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
 
 .copyright__icon {
   display: block;
   fill: #666666;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    margin-top: 2px;
+  }
 }

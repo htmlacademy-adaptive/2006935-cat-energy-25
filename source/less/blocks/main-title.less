@@ -8,23 +8,37 @@
   background-repeat: no-repeat;
   background-color: @green;
   background-size: cover;
+  background-position: 50%;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/index/index-background-image-mobile@2x.jpg");
-    // background-size: 320px 302px;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: block;
-
-    padding: 62px 0 0 0;
-
-    background-image: none;
-    background-color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 115px 0 0 80px;
+    width: 100%;
+    padding: 0;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 0;
+
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/index/index-background-image-desktop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: @green;
+      background-position: center;
+
+      content: "";
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/index-background-image-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
   }
 }
 
@@ -39,7 +53,9 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin: 0 110px;
+    margin: 0 111px;
+    margin-bottom: 273px;
+    padding-left: 80px;
   }
 }
 
@@ -58,7 +74,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 0;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 }
 
@@ -75,7 +91,7 @@
   @media (min-width: @tablet-width) {
     width: 450px;
     margin-bottom: 20px;
-    padding-left: 87px;
+    padding-left: 89px;
 
     font-size: 20px;
     line-height: 20px;
@@ -91,20 +107,25 @@
 
 .main-title__image {
   position: relative;
-  top: 27px;
+  top: 29px;
+  left: 50%;
+
+  padding: 0;
   margin: 0 auto;
-  margin-bottom: -142px;
+  margin-bottom: -151px;
+
+  transform: translate(-50%, 0);
 
   @media (min-width: @tablet-width) {
     top: 0;
-    margin-bottom: 0;
+    margin-bottom: -5px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     z-index: 3;
-    top: -81px;
-    left: 368px;
+    top: -82px;
+    left: 724px;
 
     width: 552px;
     height: 499px;
@@ -115,20 +136,17 @@
   position: relative;
   top: 178px;
 
-  // width: 100%;
   margin-bottom: 198px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 240px;
-    left: 87px;
+    top: 230px;
+    left: 90px;
 
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
     position: static;
-
-    margin-bottom: 265px;
   }
 }

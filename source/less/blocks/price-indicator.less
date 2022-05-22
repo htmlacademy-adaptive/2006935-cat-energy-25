@@ -1,4 +1,5 @@
 .price-indicator {
+  grid-column: 1 / -1;
   width: 100%;
 
   font-size: 14px;
@@ -13,7 +14,9 @@
     align-items: flex-end;
 
     width: 174px;
+    margin-top: -1px;
     margin-left: auto;
+    margin-right: 3px;
 
     font-size: 20px;
     line-height: 20px;
@@ -22,7 +25,8 @@
   @media (min-width: @desktop-width) {
     display: block;
 
-    margin-left: 0;
+    margin-top: 0;
+    margin-left: 1px;
     width: 436px;
 
     text-align: left;
@@ -40,4 +44,12 @@
   }
 }
 
-// .price-indicator__cost {}
+.price-indicator__cost {
+  // для pixel perfect
+  margin-right: -1px;
+
+
+  @media (min-width: @desktop-width) {
+    margin-left: -2px;
+  }
+}

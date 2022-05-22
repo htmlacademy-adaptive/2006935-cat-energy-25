@@ -1,17 +1,17 @@
-// .slider {}
-
 .slider__image-container {
   display: flex;
   justify-content: center;
 
   width: 280px;
   height: 260px;
-  margin-bottom: 15px;
+  margin-bottom: -5px;
 
   @media (min-width: @tablet-width) {
     width: 592px;
     height: 511px;
-    margin-bottom: 25px;
+    margin-bottom: 42px;
+    padding-top: 5px;
+    padding-left: 2px;
   }
 }
 
@@ -87,7 +87,7 @@
   }
 
   &--before {
-    left: 0;
+    left: 2px;
   }
 
   &--after {
@@ -118,8 +118,8 @@
 .slider__toggle {
   position: absolute;
   top: 3px;
-  left: 6px;
-  width: 35px;
+  left: 5px;
+  width: 36px;
   height: 6px;
 
   background-color: @green;

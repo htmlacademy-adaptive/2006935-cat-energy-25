@@ -2,38 +2,15 @@
   width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   border: none;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 61px;
-  }
-}
-
-.data-checkbox__title-container {
-  position: relative;
-  width: 100%;
-
-  &::after {
-    position: absolute;
-    top: 16px;
-    left: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 2px;
-
-    background-color: @green;
-
-    content: "";
-
-    @media (min-width: @tablet-width) {
-      top: 50%;
-    }
+    margin-bottom: 82px;
   }
 }
 
@@ -59,29 +36,47 @@
 
 .data-checkbox__legend {
   padding: 0;
-  margin-bottom: 34px;
+  margin-bottom: 31px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 54px;
+  }
+}
+
+.data-checkbox__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0;
+    padding-left: 110px;
   }
 }
 
 .data-checkbox__list {
-  margin: 0 20px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 344px 1fr;
     row-gap: 32px;
 
-    width: max-content;
-    margin-left: 70px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-
-    margin-left: 110px;
+    margin-bottom: 61px;
   }
 }
 
@@ -118,7 +113,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 5px 0 5px 60px;
+    padding: 5px 0 5px 59px;
   }
 }
 
@@ -136,6 +131,10 @@
   transform: translate(-50%, -50%);
 
   content: "";
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icons/tick-tablet.svg");
+  }
 }
 
 .data-checkbox__mark {
@@ -146,7 +145,7 @@
   width: 30px;
   height: 30px;
 
-  box-shadow: 0 0 0 1px #cdcdcd;
+  box-shadow: inset 0 0 0 1px #cdcdcd;
 
   @media (min-width: @tablet-width) {
     width: 40px;

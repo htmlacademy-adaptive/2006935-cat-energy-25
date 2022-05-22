@@ -6,6 +6,11 @@
   background-color: #f2f2f2;
 }
 
+.main-footer__contacts-container {
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .main-footer__contacts {
   display: flex;
   justify-content: center;
@@ -19,17 +24,21 @@
   @media (min-width: @tablet-width) {
     justify-content: space-between;
     width: 100%;
-    padding: 70px 56px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 70px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 50%;
 
     width: 565px;
-    padding: 56px 80px;
+    padding: 60px 80px;
+
+    transform: translate(-607px, 0);
   }
 }
 
@@ -45,6 +54,7 @@
   padding: 0;
   margin: 0;
   width: 139px;
+  margin-left: -2px;
 
   font-size: 16px;
   line-height: 20px;
@@ -54,9 +64,14 @@
 
   @media (min-width: @tablet-width) {
     width: 172px;
+    margin-left: 0;
 
     font-size: 20px;
     line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -3px;
   }
 }
 
@@ -71,15 +86,28 @@
   color: #444444;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     width: 160px;
+    margin-top: -3px;
 
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-right: -2px;
+  }
+}
+
+.main-footer__contacts-address-street {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 19px;
   }
 }
 
@@ -105,20 +133,21 @@
   align-items: center;
 
   width: 100%;
-  margin: 0 20px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
+    width: 92.2%;
+    max-width: 900px;
     margin-bottom: 55px;
-    padding: 0 30px;
     box-sizing: border-box;
 
     @media (min-width: @desktop-width) {
+      width: 84.7%;
+      max-width: 1300px;
       margin-bottom: 58px;
-      padding: 0 110px;
     }
   }
 }
@@ -142,8 +171,26 @@
 
 .main-footer__logo-text {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+  }
 }
 
-// .main-footer__social {}
+.main-footer__social {
+  @media (min-width: @tablet-width) {
+    margin-top: -2px;
+    margin-left: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -6px;
+    margin-left: 28px;
+  }
+}
 
 // .main-footer__copiright {}

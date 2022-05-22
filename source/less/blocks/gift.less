@@ -1,6 +1,7 @@
 .gift {
-  padding: 187px 60px 43px 60px;
-  margin-top: 54px;
+  padding: 188px 58px 42px 58px;
+  margin: 0 20px;
+  margin-top: 53px;
   margin-bottom: 35px;
   box-sizing: border-box;
 
@@ -15,9 +16,9 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-top: 0;
+    margin: 0 30px;
     margin-bottom: 76px;
-    padding: 71px 124px 69px 422px;
+    padding: 72px 124px 68px 422px;
 
     background-image: url("../img/catalog/gift-tablet.jpg");
 
@@ -28,7 +29,7 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
-    padding: 185px 43px 42px;
+    padding: 187px 0 42px;
     margin-top: 116px;
     margin-right: 110px;
     margin-bottom: 86px;
@@ -44,8 +45,10 @@
 
 .gift__text {
   position: relative;
+
+  width: 161px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   font-family: "Arial", sans-serif;
   font-size: 16px;
@@ -55,7 +58,7 @@
 
   &::before {
     position: absolute;
-    top: -128px;
+    top: -129px;
     left: 50%;
 
     width: 78px;
@@ -70,10 +73,8 @@
     content: "";
 
     @media (min-width: @tablet-width) {
-      top: 50%;
-      left: -265px - 82px;
-
-      width: 80px;
+      top: 27px;
+      left: -265px - 79px;
       height: 82px;
 
       transform: translate(0, -50%);

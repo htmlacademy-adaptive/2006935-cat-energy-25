@@ -9,10 +9,8 @@
   &::before,
   &::after {
     position: absolute;
-    left: 20;
-    right: 20;
 
-    width: 100%;
+    width: 100vw - 12px;
     height: 1px;
 
     background-color: #d9d9d9;
@@ -21,11 +19,11 @@
   }
 
   &::before {
-    top: -20px;
+    top: -21px;
   }
 
   &::after {
-    bottom: 21px;
+    bottom: 22px;
   }
 
   @media (min-width: @tablet-width) {

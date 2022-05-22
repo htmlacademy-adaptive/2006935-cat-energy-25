@@ -1,14 +1,25 @@
 .example {
   position: relative;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 48px 20px;
 
   background-color: @gray;
 
   @media (min-width: @tablet-width) {
-    padding: 43px 30px 56px 30px;
+
+    padding: 43px 30px 72px 30px;
 
     background-color: @gray;
     box-shadow: inset 0 619px 0 0 #ffffff;
+
+    &::after {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      content: "";
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -16,6 +27,10 @@
 
     background-color: @gray;
     box-shadow: inset 0 179px 0 0 #ffffff;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -25,11 +40,26 @@
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 146px;
+  }
+}
+
+.example__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    max-width: 900px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    max-width: 1500px;
   }
 }
 
@@ -39,24 +69,30 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
+    padding-right: 25px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
+    padding-right: 0;
     margin-bottom: 69px;
   }
 }
 
 .example__indicators {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
 
   margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
+    column-gap: 0;
 
     margin-bottom: 80px;
   }
@@ -74,7 +110,7 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 0;
-    left: 50%;
+    top: -49px;
+    right: -2px;
   }
 }

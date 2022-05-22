@@ -2,11 +2,11 @@
   margin: 0 20px 49px 20px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 30px 26px 30px;
+    margin: 0 30px 43px 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px 26px 110px;
+    margin: 0 110px 22px 110px;
   }
 }
 
@@ -27,13 +27,17 @@
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 250px 250px;
-    column-gap: 133px;
-    row-gap: 37px;
+    column-gap: 134px;
+    row-gap: 33px;
+
+    transform: translate(-37px, 0);
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 250px 250px 250px 250px;
-    column-gap: 78px;
+    column-gap: 75px;
+
+    transform: translate(0, 0);
   }
 }
 
@@ -55,14 +59,15 @@
     width: 60px;
     height: 60px;
 
+    background-color: @green;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: 50% 48%;
 
     content: "";
   }
 
   @media (min-width: @tablet-width) {
-    padding: 151px 0 60px 0;
+    padding: 152px 0 60px 0;
 
     &::before {
       top: 40px;
@@ -70,6 +75,20 @@
       width: 80px;
       height: 80px;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      padding-left: 2px;
+    }
+  }
+}
+
+.advantages__item br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
   }
 }
 
@@ -80,7 +99,7 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 45%;
+    left: 113px;
     z-index: -1;
 
     font-family: "Oswald", "Arial", sans-serif;
@@ -93,6 +112,10 @@
 .advantages__item--meal {
   &::before {
     background-image: url("../img/index/advantages-meal.svg");
+  }
+
+  & > .advantages__item-number {
+    left: 119px;
   }
 }
 
