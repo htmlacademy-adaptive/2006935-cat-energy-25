@@ -42,6 +42,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -92,6 +93,7 @@
   @media (min-width: @tablet-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
     width: 440px;
@@ -150,7 +152,7 @@
       border: none;
     }
 
-    &:not(:last-child) {
+    &:not(:nth-child(3)) {
       margin-right: 10px;
     }
 
