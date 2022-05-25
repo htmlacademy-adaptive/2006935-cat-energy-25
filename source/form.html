@@ -18,13 +18,11 @@
   <header class="main-header">
     <a href="index.html" class="main-header__logo">
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg" width="202" height="59">
-        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="174" height="52">
-        <img class="main-header__logo-mobile" src="img/logo/logo-mobile.svg"
-          alt="Логотип Cat energy.">
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+        <img class="main-header__logo-mobile" src="img/logo/logo-mobile.svg" alt="Логотип Cat energy.">
       </picture>
-      <img class="main-header__logo-text" src="img/logo/logo-text-header.svg" width="101" height="18"
-        alt="Текст логотипа Cat energy.">
+      <img class="main-header__logo-text" src="img/logo/logo-text-header.svg" alt="Текст логотипа Cat energy.">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -51,69 +49,68 @@
     </div>
     <form class="form-program-select" action="https://echo.htmlacademy.ru/" method="get">
       <div class="form-program-select__top-wrapper">
-        <div class="block-container">
-        <fieldset class="data-text">
-          <legend class="visually-hidden">
-            <h2>Основные данные.</h2>
-          </legend>
-          <ul class="data-text__list list-null">
-            <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">
-                <span class="data-text__field-label data-text__field-label--name">Имя:*</span>
-                <input class="data-text__field form-program-select__text data-text__field--error" type="text"
-                  name="cat-name" required placeholder="Барсик">
-              </label>
-            </li>
-            <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">
-                <span class="data-text__field-label">Вес (кг):*</span>
-                <input class="data-text__field form-program-select__text data-text__field--error" type="number"
-                  name="cat-weight" required placeholder="7">
-              </label>
-            </li>
-            <li class="data-text__item">
-              <label class="data-text__label form-program-select__text">
-                <span class="data-text__field-label">Возраст&nbsp;(лет):</span>
-                <input class="data-text__field form-program-select__text data-text__field--error" type="number"
-                  name="cat-age" placeholder="7">
-              </label>
-            </li>
-          </ul>
-
-        </fieldset>
+        <div class="form-program-select__block-container">
+          <fieldset class="data-text">
+            <legend class="visually-hidden">
+              <h2>Основные данные.</h2>
+            </legend>
+            <ul class="data-text__list list-null">
+              <li class="data-text__item">
+                <label class="data-text__label form-program-select__text">
+                  <span class="data-text__field-label data-text__field-label--name">Имя:*</span>
+                  <input class="data-text__field form-program-select__text data-text__field--error" type="text"
+                    name="cat-name" required placeholder="Барсик">
+                </label>
+              </li>
+              <li class="data-text__item">
+                <label class="data-text__label form-program-select__text">
+                  <span class="data-text__field-label">Вес (кг):*</span>
+                  <input class="data-text__field form-program-select__text data-text__field--error" type="number"
+                    name="cat-weight" required placeholder="7">
+                </label>
+              </li>
+              <li class="data-text__item">
+                <label class="data-text__label form-program-select__text">
+                  <span class="data-text__field-label">Возраст&nbsp;(лет):</span>
+                  <input class="data-text__field form-program-select__text data-text__field--error" type="number"
+                    name="cat-age" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
-        <div class="block-container">
-        <fieldset class="data-radiobutton">
-          <legend class="visually-hidden">
-            <h2>Цель выбора программы.</h2>
-          </legend>
-          <ul class="data-radiobutton__list list-null">
-            <li class="data-radiobutton__item">
-              <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
-                <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
-                  value="weight-loss" checked>
-                <span class="data-radiobutton__mark"></span>
-                <span class="data-radiobutton__mark-text">Похудение</span>
-              </label>
-            </li>
-            <li class="data-radiobutton__item">
-              <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
-                <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
-                  value="weight-gain">
-                <span class="data-radiobutton__mark"></span>
-                <span class="data-radiobutton__mark-text">Набор массы</span>
-              </label>
-            </li>
-            <li class="data-radiobutton__item">
-              <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
-                <input class="data-radiobutton__radiobutton  visually-hidden" type="radio" name="purpose-program"
-                  value="dont-know">
-                <span class="data-radiobutton__mark"></span>
-                <span class="data-radiobutton__mark-text">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="form-program-selectblock-container">
+          <fieldset class="data-radiobutton">
+            <legend class="visually-hidden">
+              <h2>Цель выбора программы.</h2>
+            </legend>
+            <ul class="data-radiobutton__list list-null">
+              <li class="data-radiobutton__item">
+                <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
+                  <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
+                    value="weight-loss" checked>
+                  <span class="data-radiobutton__mark"></span>
+                  <span class="data-radiobutton__mark-text">Похудение</span>
+                </label>
+              </li>
+              <li class="data-radiobutton__item">
+                <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
+                  <input class="data-radiobutton__radiobutton visually-hidden" type="radio" name="purpose-program"
+                    value="weight-gain">
+                  <span class="data-radiobutton__mark"></span>
+                  <span class="data-radiobutton__mark-text">Набор массы</span>
+                </label>
+              </li>
+              <li class="data-radiobutton__item">
+                <label class="data-radiobutton__label form-program-select__text form-program-select__text--radiobutton">
+                  <input class="data-radiobutton__radiobutton  visually-hidden" type="radio" name="purpose-program"
+                    value="dont-know">
+                  <span class="data-radiobutton__mark"></span>
+                  <span class="data-radiobutton__mark-text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
       </div>
       <div class="form-program-select__container">
@@ -156,8 +153,9 @@
             <legend class="form-program-select__comment-legend">
               <h2 class="form-program-select__title base-title base-title--inner">Комментарий</h2>
             </legend>
+            <label class="visually-hidden" for="comment">Оставьте комментарий.</label>
             <textarea class="form-program-select__comment-field form-program-select__text" name="comment-field"
-              cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
         </div>
       </div>

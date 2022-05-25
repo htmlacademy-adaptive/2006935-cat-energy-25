@@ -178,26 +178,10 @@
 
   &:focus {
     border-color: #444444;
-
-    & + .data-text__icon-email {
-      stroke: @green;
-    }
-
-    & + .data-text__icon-phone {
-      fill: @green;
-    }
   }
 
   // &--error {
   //   border-color: #ff8282;
-
-  //   & + .data-text__icon-email {
-  //     stroke: #ff8282;
-  //   }
-
-  //   & + .data-text__icon-phone {
-  //     fill: #ff8282;
-  //   }
   // }
 
   @media (min-width: @tablet-width) {
@@ -220,6 +204,19 @@
     }
   }
 }
+
+.data-text__field:focus + .data-text__icon-email,
+.data-text__field:focus + .data-text__icon-phone {
+  stroke: @green;
+}
+
+  //   .data-text__field--error + .data-text__icon-email {
+  //     stroke: #ff8282;
+  //   }
+
+  //   .data-text__field--error + .data-text__icon-phone {
+  //     fill: #ff8282;
+  //   }
 
 .data-text__icon-email {
   position: absolute;

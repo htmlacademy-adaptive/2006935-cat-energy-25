@@ -112,7 +112,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'
     },
     cors: true,
     notify: false,
@@ -121,19 +121,12 @@ const server = (done) => {
   done();
 }
 
-//Reload
-
-const reload = (done) => {
-  browser.reload();
-  done();
-}
-
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html').on('change', reload);
+  gulp.watch('source/*.html').on('change', browser.reload);
 }
 
 //Build
